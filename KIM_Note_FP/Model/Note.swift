@@ -18,4 +18,12 @@ class Note: NSObject, NSCoding {
     
     // MARK: Constructors
     
-   
+    init(title: String, content: String) {
+           self.title = title
+           self.content = UITextView()
+           self.content?.text = content
+           self.uuid = NSUUID().uuidString
+           self.editDate = NSDate()
+       }
+       
+       
