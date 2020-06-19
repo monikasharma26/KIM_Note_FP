@@ -41,6 +41,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA0BDF17249D72360074C685 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CE340E36249465E30051DFF6 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +67,7 @@
 		CE340E41249465E30051DFF6 /* KIM_Note_FP */ = {
 			isa = PBXGroup;
 			children = (
+				CA0BDF17249D72360074C685 /* Model */,
 				CE340E42249465E30051DFF6 /* AppDelegate.swift */,
 				CE340E44249465E30051DFF6 /* SceneDelegate.swift */,
 				CE340E46249465E30051DFF6 /* ViewController.swift */,
