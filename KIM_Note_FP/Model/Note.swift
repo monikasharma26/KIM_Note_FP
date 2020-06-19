@@ -26,4 +26,25 @@ class Note: NSObject, NSCoding {
            self.editDate = NSDate()
        }
        
-       
+       // MARK: Data Management Protocols
+           
+           func encodeWithCoder(coder: NSCoder) {
+            coder.encode(content, forKey: "Content")
+            coder.encode(title, forKey: "Title")
+            coder.encode(uuid, forKey: "UUID")
+            coder.encode(editDate, forKey: "EditDate")
+           }
+           
+           required init?(coder: NSCoder) {
+            content = coder.decodeObject(forKey: "Content") as? UITextView
+            title = coder.decodeObject(forKey: "Title") as? String
+            uuid = coder.decodeObject(forKey: "UUID") as! String
+            editDate = coder.decodeObject(forKey: "EditDate") as? NSDate
+               }
+               
+              
+
+           }
+
+
+
