@@ -10,6 +10,7 @@ import UIKit
 
 class NoteViewController: UIViewController {
 
+     @IBOutlet weak var noteTextView: UITextView!
     var selectedNote: Note? {
         didSet {
             
