@@ -51,6 +51,9 @@
                                 <rect key="frame" x="253" y="393" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Record Audio"/>
+                                <connections>
+                                    <segue destination="jdu-Tf-LKK" kind="show" id="rvp-VW-Noi"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vIf-Gl-x0M" userLabel="Notes Image View">
                                 <rect key="frame" x="87" y="485" width="240" height="128"/>
@@ -89,7 +92,7 @@
             <objects>
                 <viewController title="RecordAudioViewController" id="jdu-Tf-LKK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IPg-YH-NCe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a01-mQ-Ulr">
