@@ -30,7 +30,7 @@ class AllNotesViewTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Test Code Only
         return notebook.size()
     }
@@ -39,13 +39,13 @@ class AllNotesViewTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // #warning Test Code Only
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("noteCell", forIndexPath: indexPath) as! NoteTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "noteCell", for: indexPath as IndexPath) as! NoteTableViewCell
         
         // Configure the cell...
         let note = notebook.getNote(indexPath.row)
         cell.noteNameLabel.text = note.title
         cell.noteLastEditDateLabel.text = note.lastEditDate()
-        cell.selectionStyle = .None
+        cell.selectionStyle = .none
         
         return cell
     }
@@ -53,8 +53,8 @@ class AllNotesViewTableViewController: UITableViewController {
     
     
     // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCell.EditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .delete {
             // Delete the row from the data source
             notebook.removeNote(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)

@@ -79,7 +79,62 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MEL-cv-OfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1197" y="138"/>
+            <point key="canvasLocation" x="-570" y="138"/>
+        </scene>
+        <!--Folders-->
+        <scene sceneID="wnQ-PZ-6OE">
+            <objects>
+                <tableViewController id="zAr-fz-epn" customClass="FolderTableViewController" customModule="KIM_Note_FP" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zzC-7I-lhD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="noteCell" rowHeight="50" id="joC-WJ-Cen" userLabel="folderCell" customClass="FolderTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="414" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="joC-WJ-Cen" id="3W0-42-gI2">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMx-MX-Gwz" userLabel="Folder Name Label">
+                                            <rect key="frame" x="27" y="8" width="532" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jMx-MX-Gwz" firstAttribute="leading" secondItem="3W0-42-gI2" secondAttribute="leadingMargin" constant="19" id="MHV-Oc-WbW"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="jMx-MX-Gwz" secondAttribute="bottom" constant="23" id="PqF-GQ-aOf"/>
+                                        <constraint firstItem="jMx-MX-Gwz" firstAttribute="top" secondItem="3W0-42-gI2" secondAttribute="topMargin" id="QtH-lv-qei"/>
+                                        <constraint firstItem="jMx-MX-Gwz" firstAttribute="trailing" secondItem="3W0-42-gI2" secondAttribute="trailingMargin" id="kqb-ph-ycu"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="noteNameLabel" destination="jMx-MX-Gwz" id="ufm-Sj-FoR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zAr-fz-epn" id="Rb5-xi-i6u"/>
+                            <outlet property="delegate" destination="zAr-fz-epn" id="Ug4-qX-RRP"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="d7D-J1-Lun"/>
+                        <barButtonItem title="New Folder" image="folder.badge.plus" catalog="system" id="9Rt-aC-iml"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Folders" id="sOL-QT-0J0"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jiI-jY-MOJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1349.2753623188407" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="folder.badge.plus" catalog="system" width="128" height="86"/>
+    </resources>
 </document>

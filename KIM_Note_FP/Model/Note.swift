@@ -42,7 +42,13 @@ class Note: NSObject, NSCoding {
             editDate = coder.decodeObject(forKey: "EditDate") as? NSDate
                }
                
-              
+              // MARK: Accessor Methods
+                            
+                            func lastEditDate() -> String {
+                                // TODO: Add Real Code
+                                let date = "Last Edited: " + editDate!.weekdayName + " at " + editDate!.toShortTimeString()
+                                return date
+                            }
 
            }
 

@@ -11,7 +11,7 @@
 		CA0BDF19249D72700074C685 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BDF18249D72700074C685 /* Note.swift */; };
 		CE340E43249465E30051DFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E42249465E30051DFF6 /* AppDelegate.swift */; };
 		CE340E45249465E30051DFF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E44249465E30051DFF6 /* SceneDelegate.swift */; };
-		CE340E47249465E30051DFF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E46249465E30051DFF6 /* ViewController.swift */; };
+		CE340E47249465E30051DFF6 /* AllNotesViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E46249465E30051DFF6 /* AllNotesViewTableViewController.swift */; };
 		CE340E4A249465E30051DFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE340E48249465E30051DFF6 /* Main.storyboard */; };
 		CE340E4D249465E30051DFF6 /* KIM_Note_FP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE340E4B249465E30051DFF6 /* KIM_Note_FP.xcdatamodeld */; };
 		CE340E4F249465E50051DFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE340E4E249465E50051DFF6 /* Assets.xcassets */; };
@@ -24,7 +24,7 @@
 		CE340E3F249465E30051DFF6 /* KIM_Note_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIM_Note_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE340E42249465E30051DFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE340E44249465E30051DFF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE340E46249465E30051DFF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE340E46249465E30051DFF6 /* AllNotesViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNotesViewTableViewController.swift; sourceTree = "<group>"; };
 		CE340E49249465E30051DFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE340E4C249465E30051DFF6 /* KIM_Note_FP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KIM_Note_FP.xcdatamodel; sourceTree = "<group>"; };
 		CE340E4E249465E50051DFF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 				CA0BDF17249D72360074C685 /* Model */,
 				CE340E42249465E30051DFF6 /* AppDelegate.swift */,
 				CE340E44249465E30051DFF6 /* SceneDelegate.swift */,
-				CE340E46249465E30051DFF6 /* ViewController.swift */,
+				CE340E46249465E30051DFF6 /* AllNotesViewTableViewController.swift */,
 				CE340E48249465E30051DFF6 /* Main.storyboard */,
 				CE340E4E249465E50051DFF6 /* Assets.xcassets */,
 				CE340E50249465E50051DFF6 /* LaunchScreen.storyboard */,
@@ -155,7 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE340E47249465E30051DFF6 /* ViewController.swift in Sources */,
+				CE340E47249465E30051DFF6 /* AllNotesViewTableViewController.swift in Sources */,
 				CE340E43249465E30051DFF6 /* AppDelegate.swift in Sources */,
 				CE340E45249465E30051DFF6 /* SceneDelegate.swift in Sources */,
 				CA0BDF16249D6C640074C685 /* NoteTableViewCell.swift in Sources */,
