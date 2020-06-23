@@ -10,7 +10,7 @@
         <!--EditNotesViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="EditNotesViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="KIM_Note_FP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EditNotesViewController" id="BYZ-38-t0r" customClass="EditNotesViewController" customModule="KIM_Note_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,7 +93,7 @@
         <!--NoteLocationViewController-->
         <scene sceneID="zUt-jk-VJV">
             <objects>
-                <viewController title="NoteLocationViewController" id="kXI-r3-pyz" sceneMemberID="viewController">
+                <viewController title="NoteLocationViewController" id="kXI-r3-pyz" customClass="NoteLocationViewController" customModule="KIM_Note_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qhp-eI-SdO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +122,7 @@
         <!--RecordAudioViewController-->
         <scene sceneID="xdH-tv-kbV">
             <objects>
-                <viewController title="RecordAudioViewController" id="jdu-Tf-LKK" sceneMemberID="viewController">
+                <viewController title="RecordAudioViewController" id="jdu-Tf-LKK" customClass="RecordAudioViewController" customModule="KIM_Note_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IPg-YH-NCe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
