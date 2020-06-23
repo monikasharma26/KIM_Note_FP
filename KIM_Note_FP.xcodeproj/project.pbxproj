@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1AAC790524A23C3500BB05F7 /* EditNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC790424A23C3500BB05F7 /* EditNotesViewController.swift */; };
 		1AAC790724A23C8900BB05F7 /* RecordAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC790624A23C8900BB05F7 /* RecordAudioViewController.swift */; };
+		1AAC790924A23CCD00BB05F7 /* NoteLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC790824A23CCD00BB05F7 /* NoteLocationViewController.swift */; };
 		CA0BDF16249D6C640074C685 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BDF15249D6C640074C685 /* NoteViewController.swift */; };
 		CA0BDF19249D72700074C685 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BDF18249D72700074C685 /* Note.swift */; };
 		CA0BDF1B24A112250074C685 /* FolderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BDF1A24A112250074C685 /* FolderTableViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		1AAC790424A23C3500BB05F7 /* EditNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotesViewController.swift; sourceTree = "<group>"; };
 		1AAC790624A23C8900BB05F7 /* RecordAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAudioViewController.swift; sourceTree = "<group>"; };
+		1AAC790824A23CCD00BB05F7 /* NoteLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteLocationViewController.swift; sourceTree = "<group>"; };
 		CA0BDF15249D6C640074C685 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		CA0BDF18249D72700074C685 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		CA0BDF1A24A112250074C685 /* FolderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderTableViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				CA0BDF15249D6C640074C685 /* NoteViewController.swift */,
 				1AAC790424A23C3500BB05F7 /* EditNotesViewController.swift */,
 				1AAC790624A23C8900BB05F7 /* RecordAudioViewController.swift */,
+				1AAC790824A23CCD00BB05F7 /* NoteLocationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				CA0BDF1B24A112250074C685 /* FolderTableViewController.swift in Sources */,
 				1AAC790724A23C8900BB05F7 /* RecordAudioViewController.swift in Sources */,
 				1AAC790524A23C3500BB05F7 /* EditNotesViewController.swift in Sources */,
+				1AAC790924A23CCD00BB05F7 /* NoteLocationViewController.swift in Sources */,
 				CA0BDF19249D72700074C685 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
