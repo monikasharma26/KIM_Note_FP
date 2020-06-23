@@ -46,6 +46,9 @@
                                 <rect key="frame" x="87" y="377" width="95" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Take Image"/>
+                                <connections>
+                                    <action selector="btnImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebL-vf-p0n"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGS-sd-UoR">
                                 <rect key="frame" x="253" y="393" width="105" height="30"/>
@@ -88,6 +91,9 @@
                     <navigationItem key="navigationItem" title="Edit Notes" id="d68-Sf-qfE">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="KIU-Wm-Fix"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="selectImage" destination="eZb-bb-def" id="u9f-OP-8jR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,7 +309,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="r33-k0-SSo"/>
+        <segue reference="lQM-bQ-PJJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="folder.badge.plus" catalog="system" width="128" height="86"/>
