@@ -92,6 +92,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Save" id="KIU-Wm-Fix"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="notesImageView" destination="vIf-Gl-x0M" id="U3Z-pw-AA6"/>
                         <outlet property="selectImage" destination="eZb-bb-def" id="u9f-OP-8jR"/>
                     </connections>
                 </viewController>

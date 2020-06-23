@@ -8,11 +8,15 @@
 
 import UIKit
 
-class EditNotesViewController: UIViewController {
+class EditNotesViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     
     @IBOutlet weak var selectImage: UIButton!
+    
+    
+    
+    @IBOutlet weak var notesImageView: UIImageView!
     
     
     override func viewDidLoad() {
@@ -52,7 +56,18 @@ class EditNotesViewController: UIViewController {
     }
     
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            let imageData = image.pngData() as NSData?
+
+       self.notesImageView.image = UIImage(data: imageData! as Data)
+               self.dismiss(animated: true, completion: nil)
+        }
+    }
     
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    picker.dismiss(animated: true, completion: nil)
+    }
     
     /*
     // MARK: - Navigation
