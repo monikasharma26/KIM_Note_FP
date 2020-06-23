@@ -87,6 +87,30 @@
             </objects>
             <point key="canvasLocation" x="1260.8695652173915" y="137.94642857142856"/>
         </scene>
+        <!--NoteLocationViewController-->
+        <scene sceneID="zUt-jk-VJV">
+            <objects>
+                <viewController title="NoteLocationViewController" id="kXI-r3-pyz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qhp-eI-SdO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kAn-mp-otk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Location" id="nJu-RR-coi"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="E57-N1-RhI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u1c-y4-7NP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2074" y="522"/>
+        </scene>
         <!--RecordAudioViewController-->
         <scene sceneID="xdH-tv-kbV">
             <objects>
@@ -128,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmF-qX-KcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2107.2463768115945" y="132.58928571428572"/>
+            <point key="canvasLocation" x="2070" y="-131"/>
         </scene>
         <!--Notes-->
         <scene sceneID="Vmz-bi-Xfq">
