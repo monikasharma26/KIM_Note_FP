@@ -85,6 +85,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="d68-Sf-qfE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +96,7 @@
             <objects>
                 <viewController title="NoteLocationViewController" id="kXI-r3-pyz" customClass="NoteLocationViewController" customModule="KIM_Note_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qhp-eI-SdO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kAn-mp-otk">
@@ -124,7 +125,7 @@
             <objects>
                 <viewController title="RecordAudioViewController" id="jdu-Tf-LKK" customClass="RecordAudioViewController" customModule="KIM_Note_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IPg-YH-NCe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a01-mQ-Ulr">
@@ -205,6 +206,7 @@
                                 <connections>
                                     <outlet property="noteLastEditDateLabel" destination="z6G-cd-OlE" id="yOC-gp-ucB"/>
                                     <outlet property="noteNameLabel" destination="uY6-D6-LBb" id="fG8-WY-x0w"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="r33-k0-SSo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -214,7 +216,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Notes" id="EKV-YJ-gop">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="7vA-aC-reY"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="7vA-aC-reY">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="lQM-bQ-PJJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MEL-cv-OfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -253,6 +259,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="noteNameLabel" destination="jMx-MX-Gwz" id="ufm-Sj-FoR"/>
+                                    <segue destination="Uxl-Y5-b7U" kind="show" id="ycD-ic-0Gf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -292,6 +299,9 @@
             <point key="canvasLocation" x="-1707.2463768115942" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="r33-k0-SSo"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="folder.badge.plus" catalog="system" width="128" height="86"/>
     </resources>
