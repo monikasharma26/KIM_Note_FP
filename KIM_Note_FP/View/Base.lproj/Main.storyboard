@@ -77,6 +77,9 @@
                                 <rect key="frame" x="247" y="696" width="88" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Get Location"/>
+                                <connections>
+                                    <segue destination="kXI-r3-pyz" kind="show" id="fZP-wk-nL6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -92,7 +95,7 @@
             <objects>
                 <viewController title="NoteLocationViewController" id="kXI-r3-pyz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qhp-eI-SdO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kAn-mp-otk">
@@ -102,14 +105,19 @@
                                     <navigationItem title="Location" id="nJu-RR-coi"/>
                                 </items>
                             </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="w44-75-GAB">
+                                <rect key="frame" x="0.0" y="98" width="414" height="686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="E57-N1-RhI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hzl-Ve-Min"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1c-y4-7NP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2074" y="522"/>
+            <point key="canvasLocation" x="2073.913043478261" y="521.65178571428567"/>
         </scene>
         <!--RecordAudioViewController-->
         <scene sceneID="xdH-tv-kbV">
