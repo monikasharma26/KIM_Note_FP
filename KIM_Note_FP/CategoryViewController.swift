@@ -74,4 +74,57 @@ class CategoryViewController: UIViewController {
 //    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
 //        self.view.endEditing(true)
 //    }
-    
+    @objc
+        func insertNewObject(_ sender: Any) {
+          //  performSegue(withIdentifier: "showCreateNoteSegue", sender: self)
+        }
+        // MARK: - Table View
+    }
+
+    extension CategoryViewController: UITableViewDataSource, UITableViewDelegate{
+         func numberOfSections(in tableView: UITableView) -> Int {
+            return 1
+        }
+         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            //return places?.count ?? 0
+            return SlickCategoryStorage.storage.count()
+        }
+         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
+            if let object = SlickCategoryStorage.storage.readCategory(at: indexPath.row) {
+                cell.textLabel?.text = object.categoryName
+                // get the count of notes
+                var predicate: NSPredicate? = NSPredicate(format: "parent.categoryName = %@", object.categoryName as CVarArg )
+                if object.categoryName == "All"{
+                    predicate = nil
+                }
+                let notes = SlickNotesStorage.storage.readNotes(withPredicate: predicate)
+                cell.detailTextLabel?.text = "\(notes!.count) notes"
+            }
+            return cell
+        }
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            if let object = SlickCategoryStorage.storage.readCategory(at: indexPath.row) {
+                let storyBoard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+               let masterViewController = storyBoard.instantiateViewController(withIdentifier: "noteListerViewController") as! MasterViewController
+                masterViewController.folderSelectedName = object.categoryName
+               self.navigationController?.pushViewController(masterViewController, animated: true)
+            }
+        }
+         func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+            // Return false if you do not want the specified item to be editable.
+            return true
+        }
+         func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+            if editingStyle == .delete {
+                //objects.remove(at: indexPath.row)
+                SlickCategoryStorage.storage.removeCategory(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            } else if editingStyle == .insert {
+                // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+            }
+        }
+    }
+
+
+
