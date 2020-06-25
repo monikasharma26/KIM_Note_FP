@@ -47,3 +47,31 @@ class CategoryViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
    
+ @IBAction func addCategoryBtnDown(_ sender: Any) {
+        print("clicked")
+       let alertController = UIAlertController(title: "Add New Category", message: "Enter Name", preferredStyle: .alert)
+        alertController.addTextField { (textField) in
+            textField.text = ""
+        }
+     let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {(alert: UIAlertAction!) in
+            print("Cancelled")
+     })
+        let addCatAction = UIAlertAction(title: "Add", style: .default, handler: {(alert: UIAlertAction!) in
+            let textField = alertController.textFields![0] // Force unwrapping because we know it exists.
+            // code to add new category
+            let category = SlickCategory(categoryName: textField.text!)
+            SlickCategoryStorage.storage.addCategory(categoryToBeAdded: category)
+            self.tableView.reloadData()
+        })
+      alertController.addAction(cancelAction)
+      alertController.addAction(addCatAction)
+      present(alertController, animated: true, completion: nil)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+//    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+//        self.view.endEditing(true)
+//    }
+    
