@@ -36,3 +36,14 @@ class CategoryViewController: UIViewController {
         }
         managedContext = appDelegate.persistentContainer.viewContext
          
+// set context in the storage
+        SlickCategoryStorage.storage.setManagedContext(managedObjectContext: managedContext)
+        SlickNotesStorage.storage.setManagedContext(managedObjectContext: managedContext)
+        let allCategories = SlickCategoryStorage.storage.readCategories(withPredicate: NSPredicate(format: "categoryName = %@", "All"))
+               if(allCategories?.count == 0){
+                   // app opened first time
+                   SlickCategoryStorage.storage.addCategory(categoryToBeAdded: .init(categoryName: "All"))
+               }
+        // Do any additional setup after loading the view.
+    }
+   
