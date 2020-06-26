@@ -173,7 +173,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQV-sh-UOg">
                                 <rect key="frame" x="0.0" y="764" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem title="Item" image="play.fill" catalog="system" id="Ftu-fT-mJV"/>
+                                    <barButtonItem title="Item" image="play.fill" catalog="system" id="Ftu-fT-mJV">
+                                        <connections>
+                                            <action selector="playAudio:" destination="J6t-xb-yZZ" id="Ejj-ge-PNr"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="amZ-jM-M8n"/>
                                     <barButtonItem title="Stop Btn" image="stop.fill" catalog="system" id="Kd5-1S-FA1"/>
                                 </items>

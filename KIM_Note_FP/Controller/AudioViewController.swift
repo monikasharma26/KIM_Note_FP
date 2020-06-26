@@ -75,7 +75,21 @@ class AudioViewController: UIViewController {
         player.volume = s!.value
     }
     
-
+    @IBAction func playAudio(_ sender: UIBarButtonItem) {
+        if isPlaying {
+                   playBtn.image = UIImage(systemName: "play.fill")
+                   player.pause()
+                   isPlaying = false
+                   timer.invalidate()
+               } else {
+                   playBtn.image = UIImage(systemName: "pause.fill")
+                   player.play()
+                   isPlaying = true
+                   timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateScrubber), userInfo: nil, repeats: true)
+                   
+               }
+    }
+    
     /*
     // MARK: - Navigation
 
