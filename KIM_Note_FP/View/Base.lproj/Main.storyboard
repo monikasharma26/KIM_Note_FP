@@ -175,7 +175,7 @@
                                 <items>
                                     <barButtonItem title="Item" image="play.fill" catalog="system" id="Ftu-fT-mJV"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="amZ-jM-M8n"/>
-                                    <barButtonItem title="Item" image="stop.fill" catalog="system" id="Kd5-1S-FA1"/>
+                                    <barButtonItem title="Stop Btn" image="stop.fill" catalog="system" id="Kd5-1S-FA1"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -196,6 +196,11 @@ CQ
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="playBtn" destination="Ftu-fT-mJV" id="VgS-zx-9Kz"/>
+                        <outlet property="scrubber" destination="EaJ-L7-uEb" id="Igp-61-JJI"/>
+                        <outlet property="volume" destination="OY5-g8-wSi" id="46t-ZE-A11"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aoj-Ne-LHU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
