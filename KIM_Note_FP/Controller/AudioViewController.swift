@@ -12,7 +12,7 @@ import AVFoundation
 class AudioViewController: UIViewController {
 
     @IBOutlet weak var scrubber: UISlider!
-    @IBOutlet weak var volume: UISlider!
+    @IBOutlet weak var volumeSlider: UISlider!
     @IBOutlet weak var playBtn: UIBarButtonItem!
     
     var isPlaying = false
@@ -32,7 +32,7 @@ class AudioViewController: UIViewController {
         
         // add tap gesture to the volume slider
         let gr = UITapGestureRecognizer(target: self, action: #selector(sliderTapped))
-        volume.addGestureRecognizer(gr)
+        volumeSlider.addGestureRecognizer(gr)
         
         do {
             try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
@@ -89,15 +89,30 @@ class AudioViewController: UIViewController {
                    
                }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+ 
+    @IBAction func volumeChanged(_ sender: UISlider) {
+        player.volume = volumeSlider.value
     }
-    */
-
+    
+    @IBAction func stopAudio(_ sender: UIBarButtonItem) {
+        player.stop()
+        timer.invalidate()
+        player.currentTime = 0
+        playBtn.image = UIImage(systemName: "play.fill")
+        isPlaying = false
+        
+    }
+    @objc func updateScrubber() {
+    scrubber.value = Float(player.currentTime)
+    if scrubber.value == scrubber.minimumValue {
+        isPlaying = false
+        playBtn.image = UIImage(systemName: "play.fill")
+    }
+    }
+    @IBAction func scrubberMoved(_ sender: UISlider) {
+        player.currentTime = TimeInterval(scrubber.value)
+        if isPlaying {
+            player.play()
+        }
+    }
 }

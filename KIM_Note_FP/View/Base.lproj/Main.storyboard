@@ -151,6 +151,9 @@
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EaJ-L7-uEb">
                                                 <rect key="frame" x="200" y="0.0" width="176" height="31"/>
+                                                <connections>
+                                                    <action selector="scrubberMoved:" destination="J6t-xb-yZZ" eventType="valueChanged" id="Guy-MO-UWJ"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -165,6 +168,9 @@
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OY5-g8-wSi">
                                                 <rect key="frame" x="200" y="0.0" width="176" height="31"/>
+                                                <connections>
+                                                    <action selector="volumeChanged:" destination="J6t-xb-yZZ" eventType="valueChanged" id="BIR-uK-GnH"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -179,7 +185,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="amZ-jM-M8n"/>
-                                    <barButtonItem title="Stop Btn" image="stop.fill" catalog="system" id="Kd5-1S-FA1"/>
+                                    <barButtonItem title="Stop Btn" image="stop.fill" catalog="system" id="Kd5-1S-FA1">
+                                        <connections>
+                                            <action selector="stopAudio:" destination="J6t-xb-yZZ" id="b9b-R4-VhO"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
