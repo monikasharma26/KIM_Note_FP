@@ -170,19 +170,30 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQV-sh-UOg">
+                                <rect key="frame" x="0.0" y="764" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="Item" image="play.fill" catalog="system" id="Ftu-fT-mJV"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="7yU-ce-SSG" firstAttribute="leading" secondItem="Psr-nG-ZXs" secondAttribute="leading" constant="20" id="K9e-L5-xUa"/>
                             <constraint firstItem="7yU-ce-SSG" firstAttribute="centerX" secondItem="VVe-EU-Vro" secondAttribute="centerX" id="KgY-BZ-GRb"/>
+                            <constraint firstItem="AQV-sh-UOg" firstAttribute="trailing" secondItem="Psr-nG-ZXs" secondAttribute="trailing" id="M1W-0p-yHN"/>
                             <constraint firstItem="7yU-ce-SSG" firstAttribute="centerY" secondItem="VVe-EU-Vro" secondAttribute="centerY" id="U5f-5F-al9"/>
+                            <constraint firstItem="AQV-sh-UOg" firstAttribute="leading" secondItem="Psr-nG-ZXs" secondAttribute="leading" id="b0J-kq-jhh"/>
                             <constraint firstItem="Psr-nG-ZXs" firstAttribute="trailing" secondItem="7yU-ce-SSG" secondAttribute="trailing" constant="20" id="pue-5S-5Dh"/>
+                            <constraint firstItem="AQV-sh-UOg" firstAttribute="bottom" secondItem="Psr-nG-ZXs" secondAttribute="bottom" id="rZI-c2-9xv"/>
                         </constraints>
                         <string key="restorationIdentifier" base64-UTF8="YES">
 CQ
 </string>
                         <viewLayoutGuide key="safeArea" id="Psr-nG-ZXs"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aoj-Ne-LHU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -373,5 +384,6 @@ CQ
     </inferredMetricsTieBreakers>
     <resources>
         <image name="folder.badge.plus" catalog="system" width="128" height="86"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
     </resources>
 </document>
