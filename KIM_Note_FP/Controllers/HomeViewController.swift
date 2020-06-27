@@ -59,9 +59,11 @@ class HomeViewController: UIViewController {
 
       
       @objc func notes() {
-       let obj = self.storyboard?.instantiateViewController(withIdentifier: "NotesTVC") as! NotesTableViewController
+        print("selected Note")
+       let obj = self.storyboard?.instantiateViewController(withIdentifier: "NoteTableViewController") as! NoteTableViewController
         
-        self.navigationController?.pushViewController(obj, animated: true)
+       // self.present(obj, animated: true, completion: nil)
+          self.navigationController?.pushViewController(obj, animated: true)
  }
     
 
