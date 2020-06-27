@@ -26,6 +26,8 @@
 		CE84529124A6AC80006536B9 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527F24A6AC80006536B9 /* SignUpVC.swift */; };
 		CE84529224A6AC80006536B9 /* DashBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84528024A6AC80006536B9 /* DashBoard.storyboard */; };
 		CE84529424A6AD0F006536B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE84529324A6AD0F006536B9 /* Assets.xcassets */; };
+		CE84529C24A6CF48006536B9 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529B24A6CF48006536B9 /* NotesTableViewController.swift */; };
+		CE84529E24A6D40C006536B9 /* AddNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529D24A6D40C006536B9 /* AddNoteVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		CE84527F24A6AC80006536B9 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		CE84528024A6AC80006536B9 /* DashBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DashBoard.storyboard; sourceTree = "<group>"; };
 		CE84529324A6AD0F006536B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE84529B24A6CF48006536B9 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
+		CE84529D24A6D40C006536B9 /* AddNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 				CE84527E24A6AC80006536B9 /* SignInVC.swift */,
 				CE84527F24A6AC80006536B9 /* SignUpVC.swift */,
 				CE84528024A6AC80006536B9 /* DashBoard.storyboard */,
+				CE84529B24A6CF48006536B9 /* NotesTableViewController.swift */,
+				CE84529D24A6D40C006536B9 /* AddNoteVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -232,7 +238,9 @@
 				CE84529124A6AC80006536B9 /* SignUpVC.swift in Sources */,
 				CE84528824A6AC80006536B9 /* UIView.swift in Sources */,
 				CE84528A24A6AC80006536B9 /* String.swift in Sources */,
+				CE84529E24A6D40C006536B9 /* AddNoteVC.swift in Sources */,
 				CE84528C24A6AC80006536B9 /* SignUp.swift in Sources */,
+				CE84529C24A6CF48006536B9 /* NotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
