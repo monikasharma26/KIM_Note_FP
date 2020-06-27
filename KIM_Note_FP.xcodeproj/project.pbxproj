@@ -26,13 +26,14 @@
 		CE84529124A6AC80006536B9 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527F24A6AC80006536B9 /* SignUpVC.swift */; };
 		CE84529224A6AC80006536B9 /* DashBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84528024A6AC80006536B9 /* DashBoard.storyboard */; };
 		CE84529424A6AD0F006536B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE84529324A6AD0F006536B9 /* Assets.xcassets */; };
-		CE84529C24A6CF48006536B9 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529B24A6CF48006536B9 /* NotesTableViewController.swift */; };
 		CE84529E24A6D40C006536B9 /* AddNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529D24A6D40C006536B9 /* AddNoteVC.swift */; };
 		CE8452A024A6D7F7006536B9 /* CategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */; };
 		CE8452A224A6D97B006536B9 /* RecordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A124A6D97B006536B9 /* RecordingVC.swift */; };
 		CE8452A424A6D9AD006536B9 /* NoteLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A324A6D9AD006536B9 /* NoteLocationVC.swift */; };
 		CE8452A624A6DF03006536B9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A524A6DF03006536B9 /* Category.swift */; };
-		CE8452A824A6DF53006536B9 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A724A6DF53006536B9 /* Notes.swift */; };
+		CE8452A824A6DF53006536B9 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A724A6DF53006536B9 /* Note.swift */; };
+		CE8452B024A7148A006536B9 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452AF24A7148A006536B9 /* NoteTableViewController.swift */; };
+		CE8452B424A72DD9006536B9 /* NoteTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452B324A72DD9006536B9 /* NoteTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,13 +58,14 @@
 		CE84527F24A6AC80006536B9 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		CE84528024A6AC80006536B9 /* DashBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DashBoard.storyboard; sourceTree = "<group>"; };
 		CE84529324A6AD0F006536B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE84529B24A6CF48006536B9 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		CE84529D24A6D40C006536B9 /* AddNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteVC.swift; sourceTree = "<group>"; };
 		CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTVC.swift; sourceTree = "<group>"; };
 		CE8452A124A6D97B006536B9 /* RecordingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingVC.swift; sourceTree = "<group>"; };
 		CE8452A324A6D9AD006536B9 /* NoteLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteLocationVC.swift; sourceTree = "<group>"; };
 		CE8452A524A6DF03006536B9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		CE8452A724A6DF53006536B9 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		CE8452A724A6DF53006536B9 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		CE8452AF24A7148A006536B9 /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
+		CE8452B324A72DD9006536B9 /* NoteTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +148,7 @@
 				CE84527924A6AC80006536B9 /* SignUp.swift */,
 				CE84527A24A6AC80006536B9 /* SignIn.swift */,
 				CE8452A524A6DF03006536B9 /* Category.swift */,
-				CE8452A724A6DF53006536B9 /* Notes.swift */,
+				CE8452A724A6DF53006536B9 /* Note.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,11 +160,12 @@
 				CE84527E24A6AC80006536B9 /* SignInVC.swift */,
 				CE84527F24A6AC80006536B9 /* SignUpVC.swift */,
 				CE84528024A6AC80006536B9 /* DashBoard.storyboard */,
-				CE84529B24A6CF48006536B9 /* NotesTableViewController.swift */,
 				CE84529D24A6D40C006536B9 /* AddNoteVC.swift */,
 				CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */,
 				CE8452A124A6D97B006536B9 /* RecordingVC.swift */,
 				CE8452A324A6D9AD006536B9 /* NoteLocationVC.swift */,
+				CE8452AF24A7148A006536B9 /* NoteTableViewController.swift */,
+				CE8452B324A72DD9006536B9 /* NoteTVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8452B024A7148A006536B9 /* NoteTableViewController.swift in Sources */,
 				CE84528424A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld in Sources */,
 				CE84528B24A6AC80006536B9 /* UIViewController.swift in Sources */,
 				CE8452A624A6DF03006536B9 /* Category.swift in Sources */,
@@ -252,15 +256,15 @@
 				CE84528524A6AC80006536B9 /* ViewController.swift in Sources */,
 				CE8452A024A6D7F7006536B9 /* CategoryTVC.swift in Sources */,
 				CE8452A424A6D9AD006536B9 /* NoteLocationVC.swift in Sources */,
-				CE8452A824A6DF53006536B9 /* Notes.swift in Sources */,
+				CE8452A824A6DF53006536B9 /* Note.swift in Sources */,
 				CE84528924A6AC80006536B9 /* UIColor.swift in Sources */,
 				CE84528D24A6AC80006536B9 /* SignIn.swift in Sources */,
+				CE8452B424A72DD9006536B9 /* NoteTVC.swift in Sources */,
 				CE84529124A6AC80006536B9 /* SignUpVC.swift in Sources */,
 				CE84528824A6AC80006536B9 /* UIView.swift in Sources */,
 				CE84528A24A6AC80006536B9 /* String.swift in Sources */,
 				CE84529E24A6D40C006536B9 /* AddNoteVC.swift in Sources */,
 				CE84528C24A6AC80006536B9 /* SignUp.swift in Sources */,
-				CE84529C24A6CF48006536B9 /* NotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

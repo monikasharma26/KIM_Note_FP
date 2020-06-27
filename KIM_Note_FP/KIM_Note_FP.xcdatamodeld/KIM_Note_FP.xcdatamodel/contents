@@ -2,7 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Categories" representedClassName="Categories" syncable="YES" codeGenerationType="class">
         <attribute name="categoryName" optional="YES" attributeType="String"/>
-        <relationship name="note" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Note" inverseName="category" inverseEntity="Note"/>
+        <relationship name="note" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Note" inverseName="catogry" inverseEntity="Note"/>
     </entity>
     <entity name="Note" representedClassName="Note" syncable="YES" codeGenerationType="class">
         <attribute name="noteCategory" optional="YES" attributeType="String"/>
@@ -12,10 +12,10 @@
         <attribute name="noteLat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="noteLong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="noteName" optional="YES" attributeType="String"/>
-        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categories" inverseName="note" inverseEntity="Categories"/>
+        <relationship name="catogry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categories" inverseName="note" inverseEntity="Categories"/>
     </entity>
     <elements>
-        <element name="Categories" positionX="-45" positionY="0" width="128" height="73"/>
-        <element name="Note" positionX="-9" positionY="54" width="128" height="163"/>
+        <element name="Categories" positionX="-54" positionY="-9" width="128" height="73"/>
+        <element name="Note" positionX="-36" positionY="27" width="128" height="163"/>
     </elements>
 </model>
