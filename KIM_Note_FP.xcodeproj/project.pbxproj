@@ -14,14 +14,12 @@
 		CE84528224A6AC80006536B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84526924A6AC80006536B9 /* LaunchScreen.storyboard */; };
 		CE84528324A6AC80006536B9 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84526B24A6AC80006536B9 /* Welcome.storyboard */; };
 		CE84528424A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE84526D24A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld */; };
-		CE84528524A6AC80006536B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84526F24A6AC80006536B9 /* ViewController.swift */; };
 		CE84528624A6AC80006536B9 /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE84527124A6AC80006536B9 /* Users.plist */; };
 		CE84528824A6AC80006536B9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527424A6AC80006536B9 /* UIView.swift */; };
 		CE84528924A6AC80006536B9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527524A6AC80006536B9 /* UIColor.swift */; };
 		CE84528A24A6AC80006536B9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527624A6AC80006536B9 /* String.swift */; };
 		CE84528B24A6AC80006536B9 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527724A6AC80006536B9 /* UIViewController.swift */; };
 		CE84528C24A6AC80006536B9 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527924A6AC80006536B9 /* SignUp.swift */; };
-		CE84528D24A6AC80006536B9 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527A24A6AC80006536B9 /* SignIn.swift */; };
 		CE84528F24A6AC80006536B9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527D24A6AC80006536B9 /* HomeViewController.swift */; };
 		CE84529024A6AC80006536B9 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527E24A6AC80006536B9 /* SignInVC.swift */; };
 		CE84529124A6AC80006536B9 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527F24A6AC80006536B9 /* SignUpVC.swift */; };
@@ -47,14 +45,12 @@
 		CE84526A24A6AC80006536B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE84526C24A6AC80006536B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Welcome.storyboard; sourceTree = "<group>"; };
 		CE84526E24A6AC80006536B9 /* KIM_Note_FP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KIM_Note_FP.xcdatamodel; sourceTree = "<group>"; };
-		CE84526F24A6AC80006536B9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE84527124A6AC80006536B9 /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
 		CE84527424A6AC80006536B9 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		CE84527524A6AC80006536B9 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CE84527624A6AC80006536B9 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CE84527724A6AC80006536B9 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		CE84527924A6AC80006536B9 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
-		CE84527A24A6AC80006536B9 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		CE84527D24A6AC80006536B9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CE84527E24A6AC80006536B9 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		CE84527F24A6AC80006536B9 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -106,7 +102,6 @@
 				CE84526D24A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld */,
 				CE84527824A6AC80006536B9 /* Model */,
 				CE84527024A6AC80006536B9 /* Sources */,
-				CE84526F24A6AC80006536B9 /* ViewController.swift */,
 				CE340E42249465E30051DFF6 /* AppDelegate.swift */,
 				CE340E44249465E30051DFF6 /* SceneDelegate.swift */,
 				CE84529324A6AD0F006536B9 /* Assets.xcassets */,
@@ -148,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				CE84527924A6AC80006536B9 /* SignUp.swift */,
-				CE84527A24A6AC80006536B9 /* SignIn.swift */,
 				CE8452A524A6DF03006536B9 /* Category.swift */,
 				CE8452A724A6DF53006536B9 /* Note.swift */,
 			);
@@ -256,12 +250,10 @@
 				CE84529024A6AC80006536B9 /* SignInVC.swift in Sources */,
 				CE340E45249465E30051DFF6 /* SceneDelegate.swift in Sources */,
 				CE84528F24A6AC80006536B9 /* HomeViewController.swift in Sources */,
-				CE84528524A6AC80006536B9 /* ViewController.swift in Sources */,
 				CE8452A024A6D7F7006536B9 /* CategoryTVC.swift in Sources */,
 				CE8452A424A6D9AD006536B9 /* NoteLocationVC.swift in Sources */,
 				CE8452A824A6DF53006536B9 /* Note.swift in Sources */,
 				CE84528924A6AC80006536B9 /* UIColor.swift in Sources */,
-				CE84528D24A6AC80006536B9 /* SignIn.swift in Sources */,
 				CE8452B424A72DD9006536B9 /* NoteTVC.swift in Sources */,
 				CE84529124A6AC80006536B9 /* SignUpVC.swift in Sources */,
 				CE84528824A6AC80006536B9 /* UIView.swift in Sources */,
