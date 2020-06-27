@@ -128,8 +128,8 @@ class AddNoteVC: UIViewController,UINavigationControllerDelegate,UIPickerViewDat
         picker.dismiss(animated: true, completion: nil)
     }
     @IBAction func addAudio(_ sender: Any) {
-        let obj = self.storyboard?.instantiateViewController(withIdentifier: "RecordingVC") as! RecordingVC
-                             self.present(obj, animated: true, completion: nil)
+      //  let obj = self.storyboard?.instantiateViewController(withIdentifier: "RecordingVC") as! RecordingVC
+                           //  self.present(obj, animated: true, completion: nil)
     }
     
     func openDialog(){
