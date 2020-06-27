@@ -41,7 +41,6 @@ class NoteTVC: UITableViewCell {
         func configureCell(note: Note) {
             
             self.titleLbl.text = note.noteName?.uppercased()
-            self.descLbl.text = note.noteDescription
             self.catLbl.text = note.noteCategory
         
             self.dtlbl.text = note.noteDate
@@ -55,4 +54,14 @@ class NoteTVC: UITableViewCell {
 
       
     }
+extension Date
+{
+    func formatDate() -> String
+    {
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "MMM dd,yyyy"
+        return dateFormatterPrint.string(from: self)
+    }
+}
+
 

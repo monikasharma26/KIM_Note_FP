@@ -207,7 +207,13 @@ class RecordingVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDeleg
         })
         present(ac, animated: true)
     }
-
+    
+    @IBAction func backButton(_ sender: Any) {
+       let storyboard = UIStoryboard(name: "DashBoard", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "RecordingVC") as! RecordingVC
+         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
 

@@ -24,9 +24,9 @@ class HomeViewController: UIViewController {
                      addgesture.numberOfTapsRequired = 1
                      addgesture.addTarget(self, action: #selector(category))
                
-               let addnotes = UITapGestureRecognizer()
-                           addnotes.numberOfTapsRequired = 1
-                           addnotes.addTarget(self, action: #selector(notes))
+              let addnotes = UITapGestureRecognizer()
+                          addnotes.numberOfTapsRequired = 1
+                        addnotes.addTarget(self, action: #selector(notes))
                
                let contactgesture = UITapGestureRecognizer()
                            contactgesture.numberOfTapsRequired = 1
@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
                            aboutgesture.addTarget(self, action: #selector(aboutbrowser))
        
         CategoriesView.addGestureRecognizer(addgesture)
-        NotesView.addGestureRecognizer(addnotes)
+      NotesView.addGestureRecognizer(addnotes)
         contactView.addGestureRecognizer(contactgesture)
         aboutView.addGestureRecognizer(aboutgesture)
     }
@@ -59,8 +59,8 @@ class HomeViewController: UIViewController {
 
       
       @objc func notes() {
-        print("selected Note")
-       let obj = self.storyboard?.instantiateViewController(withIdentifier: "NoteTableViewController") as! NoteTableViewController
+       print("selected Note")
+       let obj = self.storyboard?.instantiateViewController(withIdentifier: "NoteListVC") as! NoteListVC
         
        // self.present(obj, animated: true, completion: nil)
           self.navigationController?.pushViewController(obj, animated: true)
@@ -76,6 +76,7 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+   
+    
 }
 

@@ -24,8 +24,6 @@ class AddNoteVC: UIViewController,UINavigationControllerDelegate,UIPickerViewDat
     let regionInMeters: Double = 10000
       var chosenCategory : String = ""
     var categoryPicker = UIPickerView()
-   
-     // var CategoryPicker = UIPickerView()
     
     var managedObjectContext: NSManagedObjectContext? {
         return (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -99,9 +97,7 @@ class AddNoteVC: UIViewController,UINavigationControllerDelegate,UIPickerViewDat
             do {
                 try self.managedObjectContext?.save()
                 completion()
-                let alertBox = UIAlertController(title: "Alert", message: "Data Save Successfully", preferredStyle: .alert)
-                  alertBox.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                  self.present(alertBox, animated: true, completion: nil)
+                
             }
             
             catch let error {
@@ -121,15 +117,21 @@ class AddNoteVC: UIViewController,UINavigationControllerDelegate,UIPickerViewDat
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
             let textField = alert?.textFields![0]
             category.append(textField!.text!)
+
             UserDefaults.standard.set(category, forKey: "Category")
         }))
 
-        // 4. Present the alert.
+     
         self.present(alert, animated: true, completion: nil)
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
+    @IBAction func addAudio(_ sender: Any) {
+        let obj = self.storyboard?.instantiateViewController(withIdentifier: "RecordingVC") as! RecordingVC
+                             self.present(obj, animated: true, completion: nil)
+    }
+    
     func openDialog(){
            let alert = UIAlertController(title: "Note", message: "Pick image from", preferredStyle: .alert)
            
@@ -211,27 +213,27 @@ class AddNoteVC: UIViewController,UINavigationControllerDelegate,UIPickerViewDat
                     note.noteLong = (locationManager.location?.coordinate.longitude)!
                     
                     saveData() {
-                        let isPresentingInAddFluidPatientMode = self.presentingViewController is UINavigationController
-                        
-                        if isPresentingInAddFluidPatientMode {
-                            self.dismiss(animated: true, completion: nil)
-                            
-                        }
-                        
-                        else {
-                            self.dismiss(animated: true) {
-                                self.navigationController?.popViewController(animated: true)
-                                self.dismiss(animated: true, completion: nil)
-                            }
-                            
-                        }
+                                           
+                                           let isPresentingInAddFluidPatientMode = self.presentingViewController is UINavigationController
+                                           
+                                           if isPresentingInAddFluidPatientMode {
+                                               self.dismiss(animated: true, completion: nil)
+                                               
+                                           }
+                                           
+                                           else {
+                                               self.dismiss(animated: true) {
+                                                   self.navigationController?.popViewController(animated: true)
+                                                   self.dismiss(animated: true, completion: nil)
+                                               }
+                                               
+                                           }
 
-                    }
+                                       }
 
-                }
-            
-            }
-            //
+                                   }
+                               
+                               }
             else if (isExsisting == true) {
                 
                 let note = self.note
@@ -246,33 +248,62 @@ class AddNoteVC: UIViewController,UINavigationControllerDelegate,UIPickerViewDat
                     managedObject!.setValue(data, forKey: "noteImage")
                 }
                 
-                do {
-                    try context.save()
-                    
-                    let isPresentingInAddFluidPatientMode = self.presentingViewController is UINavigationController
-                    
-                    if isPresentingInAddFluidPatientMode {
-                        self.dismiss(animated: true, completion: nil)
-                        
-                    }
-                        
-                    else {
-                        self.navigationController!.popViewController(animated: true)
-                        
-                    }
+             do {
+                             try context.save()
+                             
+                             let isPresentingInAddFluidPatientMode = self.presentingViewController is UINavigationController
+                             
+                             if isPresentingInAddFluidPatientMode {
+                                 self.dismiss(animated: true, completion: nil)
+                                 
+                             }
+                                 
+                             else {
+                                 self.navigationController!.popViewController(animated: true)
+                                 
+                             }
+                         }
+                         
+                         catch {
+                             
+                         }
+                     }
 
-                }
-                
-                catch {
-                }
-            }
+                 }
 
-        }
+             }
+             
 
-    }
-   
+             
     
-   
+
+   func getCategory(of:String) -> Categories?
+   {
+       var returner:Categories? = nil
+       let appdelegate = UIApplication.shared.delegate as! AppDelegate
+                     let context = appdelegate.persistentContainer.viewContext
+       let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Categories")
+       
+       do
+       {
+           let x = try context.fetch(fetchRequest) as! [Categories]
+           for category in x
+           {
+               if let cname = category.categoryName
+               {
+                   if cname == of
+                   {
+                       returner = category
+                   }
+               }
+           }
+       }
+       catch
+       {
+           
+       }
+       return returner
+   }
   
    func determineMyCurrentLocation() {
         locationManager = CLLocationManager()

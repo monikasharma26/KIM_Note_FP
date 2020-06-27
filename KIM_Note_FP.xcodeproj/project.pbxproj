@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE25AF4F24A78B8000FC6896 /* NoteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25AF4E24A78B8000FC6896 /* NoteListVC.swift */; };
 		CE340E43249465E30051DFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E42249465E30051DFF6 /* AppDelegate.swift */; };
 		CE340E45249465E30051DFF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E44249465E30051DFF6 /* SceneDelegate.swift */; };
 		CE340E52249465E50051DFF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE340E50249465E50051DFF6 /* LaunchScreen.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE25AF4E24A78B8000FC6896 /* NoteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListVC.swift; sourceTree = "<group>"; };
 		CE340E3F249465E30051DFF6 /* KIM_Note_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIM_Note_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE340E42249465E30051DFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE340E44249465E30051DFF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				CE8452A324A6D9AD006536B9 /* NoteLocationVC.swift */,
 				CE8452AF24A7148A006536B9 /* NoteTableViewController.swift */,
 				CE8452B324A72DD9006536B9 /* NoteTVC.swift */,
+				CE25AF4E24A78B8000FC6896 /* NoteListVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				CE84528824A6AC80006536B9 /* UIView.swift in Sources */,
 				CE84528A24A6AC80006536B9 /* String.swift in Sources */,
 				CE84529E24A6D40C006536B9 /* AddNoteVC.swift in Sources */,
+				CE25AF4F24A78B8000FC6896 /* NoteListVC.swift in Sources */,
 				CE84528C24A6AC80006536B9 /* SignUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
