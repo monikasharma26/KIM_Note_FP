@@ -29,6 +29,7 @@
 		CE84529C24A6CF48006536B9 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529B24A6CF48006536B9 /* NotesTableViewController.swift */; };
 		CE84529E24A6D40C006536B9 /* AddNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529D24A6D40C006536B9 /* AddNoteVC.swift */; };
 		CE8452A024A6D7F7006536B9 /* CategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */; };
+		CE8452A224A6D97B006536B9 /* RecordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A124A6D97B006536B9 /* RecordingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		CE84529B24A6CF48006536B9 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		CE84529D24A6D40C006536B9 /* AddNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteVC.swift; sourceTree = "<group>"; };
 		CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTVC.swift; sourceTree = "<group>"; };
+		CE8452A124A6D97B006536B9 /* RecordingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				CE84529B24A6CF48006536B9 /* NotesTableViewController.swift */,
 				CE84529D24A6D40C006536B9 /* AddNoteVC.swift */,
 				CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */,
+				CE8452A124A6D97B006536B9 /* RecordingVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				CE84528424A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld in Sources */,
 				CE84528B24A6AC80006536B9 /* UIViewController.swift in Sources */,
 				CE340E43249465E30051DFF6 /* AppDelegate.swift in Sources */,
+				CE8452A224A6D97B006536B9 /* RecordingVC.swift in Sources */,
 				CE84529024A6AC80006536B9 /* SignInVC.swift in Sources */,
 				CE340E45249465E30051DFF6 /* SceneDelegate.swift in Sources */,
 				CE84528F24A6AC80006536B9 /* HomeViewController.swift in Sources */,
