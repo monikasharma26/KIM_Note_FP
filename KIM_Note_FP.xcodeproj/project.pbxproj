@@ -7,41 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AAC790524A23C3500BB05F7 /* EditNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC790424A23C3500BB05F7 /* EditNotesViewController.swift */; };
-		1AAC790724A23C8900BB05F7 /* RecordAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC790624A23C8900BB05F7 /* RecordAudioViewController.swift */; };
-		1AAC790924A23CCD00BB05F7 /* NoteLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC790824A23CCD00BB05F7 /* NoteLocationViewController.swift */; };
-		6CECE11424A460D000EC3DBA /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CECE11324A460D000EC3DBA /* AudioViewController.swift */; };
-		CA0BDF16249D6C640074C685 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BDF15249D6C640074C685 /* NoteViewController.swift */; };
-		CA0BDF19249D72700074C685 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BDF18249D72700074C685 /* Note.swift */; };
-		CA0BDF1B24A112250074C685 /* FolderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BDF1A24A112250074C685 /* FolderTableViewController.swift */; };
-		CA0BDF4224A51BBA0074C685 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BDF4124A51BBA0074C685 /* CategoryViewController.swift */; };
 		CE340E43249465E30051DFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E42249465E30051DFF6 /* AppDelegate.swift */; };
 		CE340E45249465E30051DFF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E44249465E30051DFF6 /* SceneDelegate.swift */; };
 		CE340E47249465E30051DFF6 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E46249465E30051DFF6 /* NoteTableViewController.swift */; };
-		CE340E4A249465E30051DFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE340E48249465E30051DFF6 /* Main.storyboard */; };
-		CE340E4D249465E30051DFF6 /* KIM_Note_FP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE340E4B249465E30051DFF6 /* KIM_Note_FP.xcdatamodeld */; };
-		CE340E4F249465E50051DFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE340E4E249465E50051DFF6 /* Assets.xcassets */; };
 		CE340E52249465E50051DFF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE340E50249465E50051DFF6 /* LaunchScreen.storyboard */; };
+		CE84528224A6AC80006536B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84526924A6AC80006536B9 /* LaunchScreen.storyboard */; };
+		CE84528324A6AC80006536B9 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84526B24A6AC80006536B9 /* Welcome.storyboard */; };
+		CE84528424A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE84526D24A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld */; };
+		CE84528524A6AC80006536B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84526F24A6AC80006536B9 /* ViewController.swift */; };
+		CE84528624A6AC80006536B9 /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE84527124A6AC80006536B9 /* Users.plist */; };
+		CE84528824A6AC80006536B9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527424A6AC80006536B9 /* UIView.swift */; };
+		CE84528924A6AC80006536B9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527524A6AC80006536B9 /* UIColor.swift */; };
+		CE84528A24A6AC80006536B9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527624A6AC80006536B9 /* String.swift */; };
+		CE84528B24A6AC80006536B9 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527724A6AC80006536B9 /* UIViewController.swift */; };
+		CE84528C24A6AC80006536B9 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527924A6AC80006536B9 /* SignUp.swift */; };
+		CE84528D24A6AC80006536B9 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527A24A6AC80006536B9 /* SignIn.swift */; };
+		CE84528F24A6AC80006536B9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527D24A6AC80006536B9 /* HomeViewController.swift */; };
+		CE84529024A6AC80006536B9 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527E24A6AC80006536B9 /* SignInVC.swift */; };
+		CE84529124A6AC80006536B9 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527F24A6AC80006536B9 /* SignUpVC.swift */; };
+		CE84529224A6AC80006536B9 /* DashBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84528024A6AC80006536B9 /* DashBoard.storyboard */; };
+		CE84529424A6AD0F006536B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE84529324A6AD0F006536B9 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1AAC790424A23C3500BB05F7 /* EditNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotesViewController.swift; sourceTree = "<group>"; };
-		1AAC790624A23C8900BB05F7 /* RecordAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAudioViewController.swift; sourceTree = "<group>"; };
-		1AAC790824A23CCD00BB05F7 /* NoteLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteLocationViewController.swift; sourceTree = "<group>"; };
-		6CECE11324A460D000EC3DBA /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
-		CA0BDF15249D6C640074C685 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
-		CA0BDF18249D72700074C685 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		CA0BDF1A24A112250074C685 /* FolderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderTableViewController.swift; sourceTree = "<group>"; };
-		CA0BDF4124A51BBA0074C685 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		CE340E3F249465E30051DFF6 /* KIM_Note_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIM_Note_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE340E42249465E30051DFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE340E44249465E30051DFF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE340E46249465E30051DFF6 /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
-		CE340E49249465E30051DFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE340E4C249465E30051DFF6 /* KIM_Note_FP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KIM_Note_FP.xcdatamodel; sourceTree = "<group>"; };
-		CE340E4E249465E50051DFF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE340E51249465E50051DFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE340E53249465E50051DFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE84526A24A6AC80006536B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE84526C24A6AC80006536B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Welcome.storyboard; sourceTree = "<group>"; };
+		CE84526E24A6AC80006536B9 /* KIM_Note_FP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KIM_Note_FP.xcdatamodel; sourceTree = "<group>"; };
+		CE84526F24A6AC80006536B9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE84527124A6AC80006536B9 /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
+		CE84527424A6AC80006536B9 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CE84527524A6AC80006536B9 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CE84527624A6AC80006536B9 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CE84527724A6AC80006536B9 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CE84527924A6AC80006536B9 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		CE84527A24A6AC80006536B9 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		CE84527D24A6AC80006536B9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE84527E24A6AC80006536B9 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		CE84527F24A6AC80006536B9 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		CE84528024A6AC80006536B9 /* DashBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DashBoard.storyboard; sourceTree = "<group>"; };
+		CE84529324A6AD0F006536B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,34 +65,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA0BDF17249D72360074C685 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CA0BDF18249D72700074C685 /* Note.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CA0BDF1D24A115B90074C685 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CE340E48249465E30051DFF6 /* Main.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CA0BDF1E24A115D90074C685 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				CA0BDF15249D6C640074C685 /* NoteViewController.swift */,
-				1AAC790424A23C3500BB05F7 /* EditNotesViewController.swift */,
-				1AAC790624A23C8900BB05F7 /* RecordAudioViewController.swift */,
-				1AAC790824A23CCD00BB05F7 /* NoteLocationViewController.swift */,
-				6CECE11324A460D000EC3DBA /* AudioViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		CE340E36249465E30051DFF6 = {
 			isa = PBXGroup;
 			children = (
@@ -102,20 +84,69 @@
 		CE340E41249465E30051DFF6 /* KIM_Note_FP */ = {
 			isa = PBXGroup;
 			children = (
-				CA0BDF1E24A115D90074C685 /* Controller */,
-				CA0BDF1D24A115B90074C685 /* View */,
-				CA0BDF17249D72360074C685 /* Model */,
+				CE84526824A6AC80006536B9 /* Base.lproj */,
+				CE84527B24A6AC80006536B9 /* Controllers */,
+				CE84527324A6AC80006536B9 /* Extensions */,
+				CE84526D24A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld */,
+				CE84527824A6AC80006536B9 /* Model */,
+				CE84527024A6AC80006536B9 /* Sources */,
+				CE84526F24A6AC80006536B9 /* ViewController.swift */,
 				CE340E42249465E30051DFF6 /* AppDelegate.swift */,
 				CE340E44249465E30051DFF6 /* SceneDelegate.swift */,
 				CE340E46249465E30051DFF6 /* NoteTableViewController.swift */,
-				CE340E4E249465E50051DFF6 /* Assets.xcassets */,
+				CE84529324A6AD0F006536B9 /* Assets.xcassets */,
 				CE340E50249465E50051DFF6 /* LaunchScreen.storyboard */,
 				CE340E53249465E50051DFF6 /* Info.plist */,
-				CE340E4B249465E30051DFF6 /* KIM_Note_FP.xcdatamodeld */,
-				CA0BDF1A24A112250074C685 /* FolderTableViewController.swift */,
-				CA0BDF4124A51BBA0074C685 /* CategoryViewController.swift */,
 			);
 			path = KIM_Note_FP;
+			sourceTree = "<group>";
+		};
+		CE84526824A6AC80006536B9 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CE84526924A6AC80006536B9 /* LaunchScreen.storyboard */,
+				CE84526B24A6AC80006536B9 /* Welcome.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		CE84527024A6AC80006536B9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CE84527124A6AC80006536B9 /* Users.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CE84527324A6AC80006536B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE84527424A6AC80006536B9 /* UIView.swift */,
+				CE84527524A6AC80006536B9 /* UIColor.swift */,
+				CE84527624A6AC80006536B9 /* String.swift */,
+				CE84527724A6AC80006536B9 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE84527824A6AC80006536B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE84527924A6AC80006536B9 /* SignUp.swift */,
+				CE84527A24A6AC80006536B9 /* SignIn.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE84527B24A6AC80006536B9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE84527D24A6AC80006536B9 /* HomeViewController.swift */,
+				CE84527E24A6AC80006536B9 /* SignInVC.swift */,
+				CE84527F24A6AC80006536B9 /* SignUpVC.swift */,
+				CE84528024A6AC80006536B9 /* DashBoard.storyboard */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE340E52249465E50051DFF6 /* LaunchScreen.storyboard in Resources */,
-				CE340E4F249465E50051DFF6 /* Assets.xcassets in Resources */,
-				CE340E4A249465E30051DFF6 /* Main.storyboard in Resources */,
+				CE84528224A6AC80006536B9 /* LaunchScreen.storyboard in Resources */,
+				CE84529224A6AC80006536B9 /* DashBoard.storyboard in Resources */,
+				CE84528324A6AC80006536B9 /* Welcome.storyboard in Resources */,
+				CE84529424A6AD0F006536B9 /* Assets.xcassets in Resources */,
+				CE84528624A6AC80006536B9 /* Users.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,37 +224,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE340E47249465E30051DFF6 /* NoteTableViewController.swift in Sources */,
+				CE84528424A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld in Sources */,
+				CE84528B24A6AC80006536B9 /* UIViewController.swift in Sources */,
 				CE340E43249465E30051DFF6 /* AppDelegate.swift in Sources */,
+				CE84529024A6AC80006536B9 /* SignInVC.swift in Sources */,
 				CE340E45249465E30051DFF6 /* SceneDelegate.swift in Sources */,
-				CA0BDF16249D6C640074C685 /* NoteViewController.swift in Sources */,
-				CA0BDF4224A51BBA0074C685 /* CategoryViewController.swift in Sources */,
-				CE340E4D249465E30051DFF6 /* KIM_Note_FP.xcdatamodeld in Sources */,
-				CA0BDF1B24A112250074C685 /* FolderTableViewController.swift in Sources */,
-				1AAC790724A23C8900BB05F7 /* RecordAudioViewController.swift in Sources */,
-				1AAC790524A23C3500BB05F7 /* EditNotesViewController.swift in Sources */,
-				6CECE11424A460D000EC3DBA /* AudioViewController.swift in Sources */,
-				1AAC790924A23CCD00BB05F7 /* NoteLocationViewController.swift in Sources */,
-				CA0BDF19249D72700074C685 /* Note.swift in Sources */,
+				CE84528F24A6AC80006536B9 /* HomeViewController.swift in Sources */,
+				CE84528524A6AC80006536B9 /* ViewController.swift in Sources */,
+				CE84528924A6AC80006536B9 /* UIColor.swift in Sources */,
+				CE84528D24A6AC80006536B9 /* SignIn.swift in Sources */,
+				CE84529124A6AC80006536B9 /* SignUpVC.swift in Sources */,
+				CE84528824A6AC80006536B9 /* UIView.swift in Sources */,
+				CE84528A24A6AC80006536B9 /* String.swift in Sources */,
+				CE84528C24A6AC80006536B9 /* SignUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE340E48249465E30051DFF6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE340E49249465E30051DFF6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE340E50249465E50051DFF6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CE340E51249465E50051DFF6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE84526924A6AC80006536B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE84526A24A6AC80006536B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE84526B24A6AC80006536B9 /* Welcome.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE84526C24A6AC80006536B9 /* Base */,
+			);
+			name = Welcome.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -400,12 +444,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CE340E4B249465E30051DFF6 /* KIM_Note_FP.xcdatamodeld */ = {
+		CE84526D24A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CE340E4C249465E30051DFF6 /* KIM_Note_FP.xcdatamodel */,
+				CE84526E24A6AC80006536B9 /* KIM_Note_FP.xcdatamodel */,
 			);
-			currentVersion = CE340E4C249465E30051DFF6 /* KIM_Note_FP.xcdatamodel */;
+			currentVersion = CE84526E24A6AC80006536B9 /* KIM_Note_FP.xcdatamodel */;
 			path = KIM_Note_FP.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
