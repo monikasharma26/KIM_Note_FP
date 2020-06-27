@@ -30,6 +30,9 @@
 		CE84529E24A6D40C006536B9 /* AddNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529D24A6D40C006536B9 /* AddNoteVC.swift */; };
 		CE8452A024A6D7F7006536B9 /* CategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */; };
 		CE8452A224A6D97B006536B9 /* RecordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A124A6D97B006536B9 /* RecordingVC.swift */; };
+		CE8452A424A6D9AD006536B9 /* NoteLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A324A6D9AD006536B9 /* NoteLocationVC.swift */; };
+		CE8452A624A6DF03006536B9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A524A6DF03006536B9 /* Category.swift */; };
+		CE8452A824A6DF53006536B9 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A724A6DF53006536B9 /* Notes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		CE84529D24A6D40C006536B9 /* AddNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteVC.swift; sourceTree = "<group>"; };
 		CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTVC.swift; sourceTree = "<group>"; };
 		CE8452A124A6D97B006536B9 /* RecordingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingVC.swift; sourceTree = "<group>"; };
+		CE8452A324A6D9AD006536B9 /* NoteLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteLocationVC.swift; sourceTree = "<group>"; };
+		CE8452A524A6DF03006536B9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		CE8452A724A6DF53006536B9 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,8 @@
 			children = (
 				CE84527924A6AC80006536B9 /* SignUp.swift */,
 				CE84527A24A6AC80006536B9 /* SignIn.swift */,
+				CE8452A524A6DF03006536B9 /* Category.swift */,
+				CE8452A724A6DF53006536B9 /* Notes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 				CE84529D24A6D40C006536B9 /* AddNoteVC.swift */,
 				CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */,
 				CE8452A124A6D97B006536B9 /* RecordingVC.swift */,
+				CE8452A324A6D9AD006536B9 /* NoteLocationVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -234,6 +243,7 @@
 			files = (
 				CE84528424A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld in Sources */,
 				CE84528B24A6AC80006536B9 /* UIViewController.swift in Sources */,
+				CE8452A624A6DF03006536B9 /* Category.swift in Sources */,
 				CE340E43249465E30051DFF6 /* AppDelegate.swift in Sources */,
 				CE8452A224A6D97B006536B9 /* RecordingVC.swift in Sources */,
 				CE84529024A6AC80006536B9 /* SignInVC.swift in Sources */,
@@ -241,6 +251,8 @@
 				CE84528F24A6AC80006536B9 /* HomeViewController.swift in Sources */,
 				CE84528524A6AC80006536B9 /* ViewController.swift in Sources */,
 				CE8452A024A6D7F7006536B9 /* CategoryTVC.swift in Sources */,
+				CE8452A424A6D9AD006536B9 /* NoteLocationVC.swift in Sources */,
+				CE8452A824A6DF53006536B9 /* Notes.swift in Sources */,
 				CE84528924A6AC80006536B9 /* UIColor.swift in Sources */,
 				CE84528D24A6AC80006536B9 /* SignIn.swift in Sources */,
 				CE84529124A6AC80006536B9 /* SignUpVC.swift in Sources */,
