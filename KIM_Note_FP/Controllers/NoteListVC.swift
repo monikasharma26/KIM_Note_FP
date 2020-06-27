@@ -11,7 +11,8 @@ import CoreData
 class NoteListVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
  @IBOutlet var tblview: UITableView!
- 
+  var issearch=false;
+
  @IBOutlet weak var searchbar: UISearchBar!
     var notes:[Note] = []
     override func viewDidLoad() {
@@ -44,22 +45,8 @@ class NoteListVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
                   cell.configureCell(note: note)
              return cell
     }
-    var inAsec = true
-    func update(index:Int)
-    {
-        if(index == 0 && inAsec)
-        {
-            notes.reverse()
-            inAsec = false
-            tblview.reloadData()
-        }
-        else if(index == 1 && !inAsec)
-        {
-            notes.reverse()
-            inAsec = true
-            tblview.reloadData()
-        }
-    }
+    
+   
     @IBAction func btnSort(_ sender: Any) {
     }
     @objc func refresh() {
@@ -89,7 +76,7 @@ class NoteListVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
                 }
                 notes.remove(at: indexPath.row)
                 self.tblview.deleteRows(at: [indexPath], with: .fade)
-                tableView.reloadData()
+                tblview.reloadData()
                 
             }
             catch

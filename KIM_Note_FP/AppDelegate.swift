@@ -28,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
               let entity = NSEntityDescription.entity(forEntityName: "Categories", in: self.persistentContainer.viewContext)
               let category = NSManagedObject(entity: entity!, insertInto: self.persistentContainer.viewContext)
                              category.setValue("Uncategorized", forKey: "categoryName")
-                             
                              do
                              {
                               try persistentContainer.viewContext.save()

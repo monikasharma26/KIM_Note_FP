@@ -42,10 +42,10 @@ class HomeViewController: UIViewController {
         aboutView.addGestureRecognizer(aboutgesture)
     }
     @objc func category() {
-       /*let obj = self.storyboard?.instantiateViewController(withIdentifier: "CustomerListVC") as! CustomerListVC
-          obj.option = OptionSelected.Driver
-              self.navigationController?.pushViewController(obj, animated: true)*/
-         }
+       let obj = self.storyboard?.instantiateViewController(withIdentifier: "CategoryTVC") as! CategoryTVC
+            self.present(obj, animated: true, completion: nil)
+              self.navigationController?.pushViewController(obj, animated: true)
+    }
       
       @objc func contactbrowser() {
         let obj = self.storyboard?.instantiateViewController(withIdentifier: "AboutUsVC") as! AboutUsVC
@@ -77,6 +77,8 @@ class HomeViewController: UIViewController {
     }
     */
    
+    @IBAction func btnFolder(_ sender: Any) {
+    }
     
 }
 
