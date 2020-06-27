@@ -110,10 +110,6 @@
                         <outlet property="NotesView" destination="YAg-IT-ioU" id="Pqo-8h-45b"/>
                         <outlet property="aboutView" destination="5tm-ER-T71" id="Q0c-k8-44b"/>
                         <outlet property="contactView" destination="0j0-2x-ybC" id="m9B-E8-63K"/>
-                        <outlet property="view_add_vehicle" destination="5tm-ER-T71" id="hA5-wk-1SJ"/>
-                        <outlet property="view_addbills" destination="YAg-IT-ioU" id="n09-nF-s9w"/>
-                        <outlet property="view_coustmers" destination="0j0-2x-ybC" id="Ehy-Ku-MtF"/>
-                        <outlet property="view_deletecoustmer" destination="ekZ-fn-mik" id="JnC-2U-z9b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gH-Zu-Map" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -139,9 +135,6 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="backWIcon"/>
-                                        <connections>
-                                            <action selector="backBtnClicked:" destination="hU0-2B-XpX" eventType="touchUpInside" id="Mjt-rf-sMc"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6N-IN-FXO">
                                         <rect key="frame" x="328" y="39" width="78" height="45"/>
@@ -158,18 +151,6 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOX-Nw-mF7">
-                                        <rect key="frame" x="308" y="31" width="106" height="53"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Add">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="addBtnClicked:" destination="hU0-2B-XpX" eventType="touchUpInside" id="vqe-bc-zAQ"/>
-                                            <segue destination="LVv-Ky-ep8" kind="show" id="9eP-p0-zha"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.30196078430000001" green="0.67843137249999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -194,9 +175,14 @@
                                         <state key="normal" title="Delete">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <action selector="btnDelete:" destination="hU0-2B-XpX" eventType="touchUpInside" id="QpB-YN-Sit"/>
-                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOX-Nw-mF7">
+                                        <rect key="frame" x="300" y="14" width="106" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.30196078430000001" green="0.67843137249999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -372,13 +358,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SNA-9p-zKG"/>
                     </view>
-                    <connections>
-                        <outlet property="bottomView" destination="TOG-1a-Cl8" id="5I1-Nk-xab"/>
-                        <outlet property="btnadd" destination="FOX-Nw-mF7" id="uAg-8F-4T4"/>
-                        <outlet property="btndelete" destination="AjO-ma-agd" id="kLm-Yh-eSA"/>
-                        <outlet property="lblCust" destination="IRE-fY-6H8" id="GLL-hd-GRF"/>
-                        <outlet property="top_view" destination="Ge1-EM-Fta" id="BiJ-qk-Ag7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDr-VR-pIK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -387,9 +366,9 @@
         <!--Add Notes-->
         <scene sceneID="2gI-vU-aFf">
             <objects>
-                <viewController storyboardIdentifier="AddNoteVC" id="LVv-Ky-ep8" customClass="AddNoteVC" customModule="Note_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddNoteVC" id="LVv-Ky-ep8" customClass="AddNoteVC" customModule="KIM_Note_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YxX-gL-HIz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Note Description " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fy-0d-t8U">
@@ -447,33 +426,14 @@
                     <navigationItem key="navigationItem" title="Add Notes" id="ytL-os-CYt">
                         <leftBarButtonItems>
                             <barButtonItem title="Location" image="location.circle.fill" catalog="system" id="mSG-NB-gH8"/>
-                            <barButtonItem title="record" image="mic.circle" catalog="system" id="oSc-e6-xYk">
-                                <connections>
-                                    <action selector="audionBtn:" destination="LVv-Ky-ep8" id="s6i-8h-z2x"/>
-                                </connections>
-                            </barButtonItem>
+                            <barButtonItem title="record" image="mic.circle" catalog="system" id="oSc-e6-xYk"/>
                         </leftBarButtonItems>
                         <rightBarButtonItems>
-                            <barButtonItem title="Save" id="n8A-yf-s2H">
-                                <connections>
-                                    <action selector="btnSave:" destination="LVv-Ky-ep8" id="wv0-Yr-HxV"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="image" image="personalhotspot" catalog="system" id="TNR-9q-mdF">
-                                <connections>
-                                    <action selector="addPhoto:" destination="LVv-Ky-ep8" id="gsb-3T-ewO"/>
-                                </connections>
-                            </barButtonItem>
+                            <barButtonItem title="Save" id="n8A-yf-s2H"/>
+                            <barButtonItem title="image" image="personalhotspot" catalog="system" id="TNR-9q-mdF"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="locationTF" destination="5GG-Te-Ev1" id="BGO-Hu-7eh"/>
-                        <outlet property="locationitem" destination="mSG-NB-gH8" id="TAP-RC-YZ2"/>
-                        <outlet property="notesImageView" destination="d03-1J-zhH" id="iiR-Pi-YX6"/>
-                        <outlet property="txtDesc" destination="1s2-qN-2m2" id="mx7-KC-hVe"/>
-                        <outlet property="txttitle" destination="Urm-th-bmk" id="rfq-8K-RNV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glz-37-xIo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

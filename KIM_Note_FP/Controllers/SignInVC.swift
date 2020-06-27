@@ -53,111 +53,117 @@ class SignInVC: UIViewController {
                   }
        }
     
-    // MARK: - Helper
-       func initSetup(){
-           //
-           if let userName = UserDefaults.standard.string(forKey: "user_name"), let passwd = UserDefaults.standard.string(forKey: "password") {
-               //
-               remembBtn.isSelected = true
-               
-               userN_tf.text = userName
-               passwd_tf.text = passwd
-           }else{
-               // reset values
-               userN_tf.text = ""
-               passwd_tf.text = ""
-           }
-       }
-       func setUpUI() {
-           //
-           userN_view.addBorder(view: userN_view, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
-           passwd_view.addBorder(view: passwd_view, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
-           signInBtn.addBorder(view: signInBtn, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
-           //
-           upConta_view.addShadow(view: upConta_view, color: UIColor.hexStringToUIColor(hex: "6D67FD").cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.8, radius: 5)
-           inConta_view.addShadow(view: inConta_view, color: UIColor.lightGray.cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.4, radius: 5)
-           signInBtn.addShadow(view: signInBtn, color: UIColor.hexStringToUIColor(hex: "6D67FD").cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.8, radius: 5)
-           
-       }
-    
-    func checkTextFields() -> Bool {
-        
-        if userN_tf.text == "" {
-            self.showAlert(title: "", message: "Username is required.")
-            return false
-        }
-        if passwd_tf.text == "" {
-            self.showAlert(title: "", message: "Password is required.")
-            return false
-        }
-        
-        return true
-    }
+   
     @IBAction func signInBtnClicked(_ sender: Any) {
        
-      if remembBtn.isSelected == true {
-                 
-                 UserDefaults.standard.set(userN_tf.text, forKey: "username")
-                 UserDefaults.standard.set(passwd_tf.text, forKey: "password")
-             }else{
-                 if let appDomain = Bundle.main.bundleIdentifier {
-                     UserDefaults.standard.removePersistentDomain(forName: appDomain)
-                  }
-             }
-             
-             // check validation
-             if self.checkTextFields() {
-                 
-                 // check plist
-                 let boolChk = self.readDataInfoFromPlistFile().0
-                 let msg = self.readDataInfoFromPlistFile().1
-                 if boolChk {
-                     //
-                     
-                    self.navigateTabScreen(storyboard: "Home", controller: "HomeViewController")
-                 }else{
-                     self.showAlert(title: "", message: msg)
+      //
+            if remembBtn.isSelected == true {
+                
+                UserDefaults.standard.set(userN_tf.text, forKey: "user_name")
+                UserDefaults.standard.set(passwd_tf.text, forKey: "password")
+            }else{
+                if let appDomain = Bundle.main.bundleIdentifier {
+                    UserDefaults.standard.removePersistentDomain(forName: appDomain)
                  }
-             }
-    }
-    func readDataInfoFromPlistFile() -> (Bool, String) {
-        
-        if let plist = Bundle.main.path(forResource: "Users", ofType: "plist")
-           {
-               if let dict = NSDictionary(contentsOfFile: plist)
-               {
-                   //Reading the users
-                   if let users = dict["Users"] as? [[String: String]]
-                   {
-                        //
-                        var strMsg = String()
-                        for user in users
-                        {
-                           
-                            let userName = user["username"]!
-                            let passwd = user["password"]!
-                            
-                            // match entered data
-                            if(userName != userN_tf.text){
-                                strMsg = "Wrong Username"
-                            }else if(userName == userN_tf.text && passwd != passwd_tf.text){
-                                strMsg = "Wrong Password"
-                            }else if(userName == userN_tf.text && passwd == passwd_tf.text) {
-                                strMsg = ""
-                                return (true, "")
-                            }
-                        }
+            }
+            
+            // check validation
+            if self.checkTextFields() {
+                
+                // check plist
+                let boolChk = self.readDataInfoFromPlistFile().0
+                let msg = self.readDataInfoFromPlistFile().1
+                if boolChk {
+                    //
                     
-                        //
-                        return (false, strMsg)
-                   }
-                  
-               }
-           }
-        
-           return (false, "Invalid information, check again.")
-           
+                    self.navigateScreen(storyboard: "DashBoard", controller: "HomeViewController")
+                }else{
+                    self.showAlert(title: "", message: msg)
+                }
+            }
     }
-    
-    
-}
+      // MARK: - Helper
+        func initSetup(){
+            //
+            if let userName = UserDefaults.standard.string(forKey: "user_name"), let passwd = UserDefaults.standard.string(forKey: "password") {
+                //
+                remembBtn.isSelected = true
+                
+                userN_tf.text = userName
+                passwd_tf.text = passwd
+            }else{
+                // reset values
+                userN_tf.text = ""
+                passwd_tf.text = ""
+            }
+        }
+        
+        func setUpUI() {
+            //
+            userN_view.addBorder(view: userN_view, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
+            passwd_view.addBorder(view: passwd_view, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
+            signInBtn.addBorder(view: signInBtn, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
+            //
+            upConta_view.addShadow(view: upConta_view, color: UIColor.hexStringToUIColor(hex: "6D67FD").cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.8, radius: 5)
+            inConta_view.addShadow(view: inConta_view, color: UIColor.lightGray.cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.4, radius: 5)
+            signInBtn.addShadow(view: signInBtn, color: UIColor.hexStringToUIColor(hex: "6D67FD").cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.8, radius: 5)
+            
+        }
+        
+        func checkTextFields() -> Bool {
+            
+            if userN_tf.text == "" {
+                self.showAlert(title: "", message: "Username is required.")
+                return false
+            }
+            if passwd_tf.text == "" {
+                self.showAlert(title: "", message: "Password is required.")
+                return false
+            }
+            
+            return true
+        }
+        
+        func readDataInfoFromPlistFile() -> (Bool, String) {
+            
+            if let plist = Bundle.main.path(forResource: "Users", ofType: "plist")
+               {
+                   if let dict = NSDictionary(contentsOfFile: plist)
+                   {
+                       //Reading the users
+                       if let users = dict["Users"] as? [[String: String]]
+                       {
+                            //
+                            var strMsg = String()
+                            for user in users
+                            {
+                               
+                                let userName = user["username"]!
+                                let passwd = user["password"]!
+                                
+                                // match entered data
+                                if(userName != userN_tf.text){
+                                    strMsg = "Wrong Username"
+                                }else if(userName == userN_tf.text && passwd != passwd_tf.text){
+                                    strMsg = "Wrong Password"
+                                }else if(userName == userN_tf.text && passwd == passwd_tf.text) {
+                                    strMsg = ""
+                                    return (true, "")
+                                }
+                            }
+                        
+                            //
+                            return (false, strMsg)
+                       }
+                      
+                   }
+               }
+            
+               return (false, "Invalid information, check again.")
+               
+        }
+        
+
+    }
+
+
