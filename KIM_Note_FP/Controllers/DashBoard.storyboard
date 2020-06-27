@@ -50,7 +50,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.57290309669999995" green="0.16778367759999999" blue="0.89416903260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.59215686274509804" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YAg-IT-ioU" userLabel="View owner">
                                 <rect key="frame" x="224" y="185" width="170" height="177"/>
@@ -69,7 +69,7 @@
                                         <state key="normal" title="Button" image="pencil" catalog="system"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.62385147809999997" green="0.065037071700000004" blue="0.92946594950000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.59215686274509804" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8i-Jd-xSb">
                                 <rect key="frame" x="148" y="59" width="119" height="30"/>
@@ -94,7 +94,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.52979362009999997" green="0.21823132040000001" blue="0.86279392239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.59215686274509804" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0j0-2x-ybC" userLabel="View Vehicles">
                                 <rect key="frame" x="224" y="432" width="170" height="177"/>
@@ -112,7 +112,7 @@
                                         <color key="highlightedColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.7762244344" green="0.83036988970000003" blue="0.3253211379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.59215686274509804" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.45926594729999998" green="0.72063380480000006" blue="0.80393272640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -734,13 +734,16 @@
                             <outlet property="delegate" destination="jEH-yq-ZHa" id="PIP-bb-IcH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="EIL-6A-mbF">
-                        <barButtonItem key="rightBarButtonItem" image="folder.fill.badge.plus" catalog="system" id="S5d-xK-QMJ">
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="snp-Ji-vOv"/>
+                        <barButtonItem image="folder.fill.badge.plus" catalog="system" id="S5d-xK-QMJ">
                             <connections>
                                 <action selector="btnadd:" destination="jEH-yq-ZHa" id="MwX-Ss-8vr"/>
                             </connections>
                         </barButtonItem>
-                    </navigationItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="EIL-6A-mbF"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SjG-e7-Yqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -749,7 +752,7 @@
         <!--Navigation Controller-->
         <scene sceneID="RUN-8G-rQY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x8h-6U-sSR" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="x8h-6U-sSR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="aY0-OW-Vtq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Brw-fg-IoQ">
@@ -757,6 +760,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pig-qm-Lo2">
+                        <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.30196078430000001" green="0.67843137249999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
                     <connections>
                         <segue destination="jEH-yq-ZHa" kind="relationship" relationship="rootViewController" id="OqI-ba-yIR"/>
                     </connections>

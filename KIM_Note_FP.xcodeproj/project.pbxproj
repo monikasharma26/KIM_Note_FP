@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CAFD9F0924A7F38900E2EF5C /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84526C24A6AC80006536B9 /* Welcome.storyboard */; };
+		CAFD9F0A24A7F38900E2EF5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84526A24A6AC80006536B9 /* LaunchScreen.storyboard */; };
 		CE25AF4F24A78B8000FC6896 /* NoteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25AF4E24A78B8000FC6896 /* NoteListVC.swift */; };
 		CE25AF5124A7BAEA00FC6896 /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25AF5024A7BAEA00FC6896 /* AboutUsVC.swift */; };
 		CE25AF5324A7BB0200FC6896 /* ContacttusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25AF5224A7BB0200FC6896 /* ContacttusVC.swift */; };
 		CE25AF5524A7BB4700FC6896 /* Aboutus.html in Resources */ = {isa = PBXBuildFile; fileRef = CE25AF5424A7BB4700FC6896 /* Aboutus.html */; };
 		CE340E43249465E30051DFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E42249465E30051DFF6 /* AppDelegate.swift */; };
 		CE340E45249465E30051DFF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E44249465E30051DFF6 /* SceneDelegate.swift */; };
-		CE84528224A6AC80006536B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84526924A6AC80006536B9 /* LaunchScreen.storyboard */; };
-		CE84528324A6AC80006536B9 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84526B24A6AC80006536B9 /* Welcome.storyboard */; };
 		CE84528424A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE84526D24A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld */; };
 		CE84528624A6AC80006536B9 /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE84527124A6AC80006536B9 /* Users.plist */; };
 		CE84528824A6AC80006536B9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84527424A6AC80006536B9 /* UIView.swift */; };
@@ -45,10 +45,10 @@
 		CE340E42249465E30051DFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE340E44249465E30051DFF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE340E53249465E50051DFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE84526A24A6AC80006536B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CE84526C24A6AC80006536B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Welcome.storyboard; sourceTree = "<group>"; };
+		CE84526A24A6AC80006536B9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE84526C24A6AC80006536B9 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		CE84526E24A6AC80006536B9 /* KIM_Note_FP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KIM_Note_FP.xcdatamodel; sourceTree = "<group>"; };
-		CE84527124A6AC80006536B9 /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Users.plist; path = ../Sources/Users.plist; sourceTree = "<group>"; };
+		CE84527124A6AC80006536B9 /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Users.plist; sourceTree = "<group>"; };
 		CE84527424A6AC80006536B9 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		CE84527524A6AC80006536B9 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CE84527624A6AC80006536B9 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -114,6 +114,7 @@
 		CE84527024A6AC80006536B9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				CE84527124A6AC80006536B9 /* Users.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -133,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				CE25AF5424A7BB4700FC6896 /* Aboutus.html */,
-				CE84527124A6AC80006536B9 /* Users.plist */,
 				CE84527924A6AC80006536B9 /* SignUp.swift */,
 				CE8452A524A6DF03006536B9 /* Category.swift */,
 				CE8452A724A6DF53006536B9 /* Note.swift */,
@@ -145,8 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				CE84527D24A6AC80006536B9 /* HomeViewController.swift */,
-				CE84526B24A6AC80006536B9 /* Welcome.storyboard */,
-				CE84526924A6AC80006536B9 /* LaunchScreen.storyboard */,
+				CE84526C24A6AC80006536B9 /* Welcome.storyboard */,
+				CE84526A24A6AC80006536B9 /* LaunchScreen.storyboard */,
 				CE84527E24A6AC80006536B9 /* SignInVC.swift */,
 				CE84527F24A6AC80006536B9 /* SignUpVC.swift */,
 				CE84528024A6AC80006536B9 /* DashBoard.storyboard */,
@@ -221,9 +221,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE25AF5524A7BB4700FC6896 /* Aboutus.html in Resources */,
-				CE84528224A6AC80006536B9 /* LaunchScreen.storyboard in Resources */,
+				CAFD9F0A24A7F38900E2EF5C /* LaunchScreen.storyboard in Resources */,
 				CE84529224A6AC80006536B9 /* DashBoard.storyboard in Resources */,
-				CE84528324A6AC80006536B9 /* Welcome.storyboard in Resources */,
+				CAFD9F0924A7F38900E2EF5C /* Welcome.storyboard in Resources */,
 				CE84529424A6AD0F006536B9 /* Assets.xcassets in Resources */,
 				CE84528624A6AC80006536B9 /* Users.plist in Resources */,
 			);
@@ -261,25 +261,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		CE84526924A6AC80006536B9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE84526A24A6AC80006536B9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		CE84526B24A6AC80006536B9 /* Welcome.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE84526C24A6AC80006536B9 /* Base */,
-			);
-			name = Welcome.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE340E54249465E50051DFF6 /* Debug */ = {
