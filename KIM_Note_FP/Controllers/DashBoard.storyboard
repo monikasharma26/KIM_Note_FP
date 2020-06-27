@@ -50,7 +50,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.57290309669999995" green="0.16778367759999999" blue="0.89416903260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YAg-IT-ioU" userLabel="View owner">
                                 <rect key="frame" x="224" y="185" width="170" height="177"/>
@@ -69,7 +69,7 @@
                                         <state key="normal" title="Button" image="pencil" catalog="system"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.62385147809999997" green="0.065037071700000004" blue="0.92946594950000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8i-Jd-xSb">
                                 <rect key="frame" x="148" y="59" width="119" height="30"/>
@@ -94,7 +94,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.065781711899999998" green="0.26825424040000001" blue="0.072252596390000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.52979362009999997" green="0.21823132040000001" blue="0.86279392239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0j0-2x-ybC" userLabel="View Vehicles">
                                 <rect key="frame" x="224" y="432" width="170" height="177"/>
@@ -112,10 +112,10 @@
                                         <color key="highlightedColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.3764233589" blue="0.39272513990000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.7762244344" green="0.83036988970000003" blue="0.3253211379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.30196078430000001" green="0.67843137249999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.45926594729999998" green="0.72063380480000006" blue="0.80393272640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="bzl-rh-xRD"/>
                     </view>
                     <navigationItem key="navigationItem" id="QCo-Jo-EPY"/>
