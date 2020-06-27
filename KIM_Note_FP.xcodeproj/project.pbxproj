@@ -28,6 +28,7 @@
 		CE84529424A6AD0F006536B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE84529324A6AD0F006536B9 /* Assets.xcassets */; };
 		CE84529C24A6CF48006536B9 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529B24A6CF48006536B9 /* NotesTableViewController.swift */; };
 		CE84529E24A6D40C006536B9 /* AddNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529D24A6D40C006536B9 /* AddNoteVC.swift */; };
+		CE8452A024A6D7F7006536B9 /* CategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		CE84529324A6AD0F006536B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE84529B24A6CF48006536B9 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		CE84529D24A6D40C006536B9 /* AddNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteVC.swift; sourceTree = "<group>"; };
+		CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				CE84528024A6AC80006536B9 /* DashBoard.storyboard */,
 				CE84529B24A6CF48006536B9 /* NotesTableViewController.swift */,
 				CE84529D24A6D40C006536B9 /* AddNoteVC.swift */,
+				CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				CE340E45249465E30051DFF6 /* SceneDelegate.swift in Sources */,
 				CE84528F24A6AC80006536B9 /* HomeViewController.swift in Sources */,
 				CE84528524A6AC80006536B9 /* ViewController.swift in Sources */,
+				CE8452A024A6D7F7006536B9 /* CategoryTVC.swift in Sources */,
 				CE84528924A6AC80006536B9 /* UIColor.swift in Sources */,
 				CE84528D24A6AC80006536B9 /* SignIn.swift in Sources */,
 				CE84529124A6AC80006536B9 /* SignUpVC.swift in Sources */,
