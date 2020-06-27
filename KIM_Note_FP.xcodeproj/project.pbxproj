@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CE340E43249465E30051DFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E42249465E30051DFF6 /* AppDelegate.swift */; };
 		CE340E45249465E30051DFF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E44249465E30051DFF6 /* SceneDelegate.swift */; };
-		CE340E47249465E30051DFF6 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E46249465E30051DFF6 /* NoteTableViewController.swift */; };
 		CE340E52249465E50051DFF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE340E50249465E50051DFF6 /* LaunchScreen.storyboard */; };
 		CE84528224A6AC80006536B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84526924A6AC80006536B9 /* LaunchScreen.storyboard */; };
 		CE84528324A6AC80006536B9 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84526B24A6AC80006536B9 /* Welcome.storyboard */; };
@@ -33,7 +32,6 @@
 		CE340E3F249465E30051DFF6 /* KIM_Note_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIM_Note_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE340E42249465E30051DFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE340E44249465E30051DFF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE340E46249465E30051DFF6 /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
 		CE340E51249465E50051DFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE340E53249465E50051DFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE84526A24A6AC80006536B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				CE84526F24A6AC80006536B9 /* ViewController.swift */,
 				CE340E42249465E30051DFF6 /* AppDelegate.swift */,
 				CE340E44249465E30051DFF6 /* SceneDelegate.swift */,
-				CE340E46249465E30051DFF6 /* NoteTableViewController.swift */,
 				CE84529324A6AD0F006536B9 /* Assets.xcassets */,
 				CE340E50249465E50051DFF6 /* LaunchScreen.storyboard */,
 				CE340E53249465E50051DFF6 /* Info.plist */,
@@ -223,7 +220,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE340E47249465E30051DFF6 /* NoteTableViewController.swift in Sources */,
 				CE84528424A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld in Sources */,
 				CE84528B24A6AC80006536B9 /* UIViewController.swift in Sources */,
 				CE340E43249465E30051DFF6 /* AppDelegate.swift in Sources */,
