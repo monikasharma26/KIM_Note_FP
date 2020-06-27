@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CE25AF4F24A78B8000FC6896 /* NoteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25AF4E24A78B8000FC6896 /* NoteListVC.swift */; };
+		CE25AF5124A7BAEA00FC6896 /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25AF5024A7BAEA00FC6896 /* AboutUsVC.swift */; };
+		CE25AF5324A7BB0200FC6896 /* ContacttusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25AF5224A7BB0200FC6896 /* ContacttusVC.swift */; };
+		CE25AF5524A7BB4700FC6896 /* Aboutus.html in Resources */ = {isa = PBXBuildFile; fileRef = CE25AF5424A7BB4700FC6896 /* Aboutus.html */; };
 		CE340E43249465E30051DFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E42249465E30051DFF6 /* AppDelegate.swift */; };
 		CE340E45249465E30051DFF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340E44249465E30051DFF6 /* SceneDelegate.swift */; };
 		CE84528224A6AC80006536B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84526924A6AC80006536B9 /* LaunchScreen.storyboard */; };
@@ -30,12 +33,14 @@
 		CE8452A424A6D9AD006536B9 /* NoteLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A324A6D9AD006536B9 /* NoteLocationVC.swift */; };
 		CE8452A624A6DF03006536B9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A524A6DF03006536B9 /* Category.swift */; };
 		CE8452A824A6DF53006536B9 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452A724A6DF53006536B9 /* Note.swift */; };
-		CE8452B024A7148A006536B9 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452AF24A7148A006536B9 /* NoteTableViewController.swift */; };
 		CE8452B424A72DD9006536B9 /* NoteTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8452B324A72DD9006536B9 /* NoteTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE25AF4E24A78B8000FC6896 /* NoteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListVC.swift; sourceTree = "<group>"; };
+		CE25AF5024A7BAEA00FC6896 /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
+		CE25AF5224A7BB0200FC6896 /* ContacttusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContacttusVC.swift; sourceTree = "<group>"; };
+		CE25AF5424A7BB4700FC6896 /* Aboutus.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Aboutus.html; sourceTree = "<group>"; };
 		CE340E3F249465E30051DFF6 /* KIM_Note_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIM_Note_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE340E42249465E30051DFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE340E44249465E30051DFF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +48,7 @@
 		CE84526A24A6AC80006536B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE84526C24A6AC80006536B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Welcome.storyboard; sourceTree = "<group>"; };
 		CE84526E24A6AC80006536B9 /* KIM_Note_FP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KIM_Note_FP.xcdatamodel; sourceTree = "<group>"; };
-		CE84527124A6AC80006536B9 /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Users.plist; path = Sources/Users.plist; sourceTree = "<group>"; };
+		CE84527124A6AC80006536B9 /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Users.plist; path = ../Sources/Users.plist; sourceTree = "<group>"; };
 		CE84527424A6AC80006536B9 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		CE84527524A6AC80006536B9 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CE84527624A6AC80006536B9 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -60,7 +65,6 @@
 		CE8452A324A6D9AD006536B9 /* NoteLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteLocationVC.swift; sourceTree = "<group>"; };
 		CE8452A524A6DF03006536B9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		CE8452A724A6DF53006536B9 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		CE8452AF24A7148A006536B9 /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
 		CE8452B324A72DD9006536B9 /* NoteTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +98,6 @@
 		CE340E41249465E30051DFF6 /* KIM_Note_FP */ = {
 			isa = PBXGroup;
 			children = (
-				CE84527124A6AC80006536B9 /* Users.plist */,
 				CE84527B24A6AC80006536B9 /* Controllers */,
 				CE84527324A6AC80006536B9 /* Extensions */,
 				CE84526D24A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld */,
@@ -129,6 +132,8 @@
 		CE84527824A6AC80006536B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE25AF5424A7BB4700FC6896 /* Aboutus.html */,
+				CE84527124A6AC80006536B9 /* Users.plist */,
 				CE84527924A6AC80006536B9 /* SignUp.swift */,
 				CE8452A524A6DF03006536B9 /* Category.swift */,
 				CE8452A724A6DF53006536B9 /* Note.swift */,
@@ -149,9 +154,10 @@
 				CE84529F24A6D7F7006536B9 /* CategoryTVC.swift */,
 				CE8452A124A6D97B006536B9 /* RecordingVC.swift */,
 				CE8452A324A6D9AD006536B9 /* NoteLocationVC.swift */,
-				CE8452AF24A7148A006536B9 /* NoteTableViewController.swift */,
 				CE8452B324A72DD9006536B9 /* NoteTVC.swift */,
 				CE25AF4E24A78B8000FC6896 /* NoteListVC.swift */,
+				CE25AF5024A7BAEA00FC6896 /* AboutUsVC.swift */,
+				CE25AF5224A7BB0200FC6896 /* ContacttusVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -214,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE25AF5524A7BB4700FC6896 /* Aboutus.html in Resources */,
 				CE84528224A6AC80006536B9 /* LaunchScreen.storyboard in Resources */,
 				CE84529224A6AC80006536B9 /* DashBoard.storyboard in Resources */,
 				CE84528324A6AC80006536B9 /* Welcome.storyboard in Resources */,
@@ -229,7 +236,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8452B024A7148A006536B9 /* NoteTableViewController.swift in Sources */,
 				CE84528424A6AC80006536B9 /* KIM_Note_FP.xcdatamodeld in Sources */,
 				CE84528B24A6AC80006536B9 /* UIViewController.swift in Sources */,
 				CE8452A624A6DF03006536B9 /* Category.swift in Sources */,
@@ -241,9 +247,11 @@
 				CE8452A024A6D7F7006536B9 /* CategoryTVC.swift in Sources */,
 				CE8452A424A6D9AD006536B9 /* NoteLocationVC.swift in Sources */,
 				CE8452A824A6DF53006536B9 /* Note.swift in Sources */,
+				CE25AF5324A7BB0200FC6896 /* ContacttusVC.swift in Sources */,
 				CE84528924A6AC80006536B9 /* UIColor.swift in Sources */,
 				CE8452B424A72DD9006536B9 /* NoteTVC.swift in Sources */,
 				CE84529124A6AC80006536B9 /* SignUpVC.swift in Sources */,
+				CE25AF5124A7BAEA00FC6896 /* AboutUsVC.swift in Sources */,
 				CE84528824A6AC80006536B9 /* UIView.swift in Sources */,
 				CE84528A24A6AC80006536B9 /* String.swift in Sources */,
 				CE84529E24A6D40C006536B9 /* AddNoteVC.swift in Sources */,

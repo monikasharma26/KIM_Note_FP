@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: Red;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 30px;
+  text-align: center;
+  background-color: #474e5d;
+  color: White;
+}
+
+.container {
+  padding: 0 0px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: Red;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1> KIM Note Application</h1>
+  
+<p>In this application we have created a Note App</p>
+  
+<p>1)Categories-> With this option the user can view the list of Categories and can create a new category  and new note will be added.</p>
+  <p>2)Notes-> With this option we can view all the existing Notes. it will display the list of all the Notes.</p>
+ 
+  <p>3)About Us-> This option contains all the information about the application.</p>
+  <p>4)Contact Us-> This option contains the contact information of the developers.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+       <h2>Monika Sharma</h2>
+        <p class="title">Developer</p>
+        <p>Student ID: C0767722</p>
+        <p>monikasharma@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Ikroop Virk</h2>
+        <p class="title">Developer</p>
+        <p>Student ID: C0774174</p>
+        <p>roopvirk@gmail.com</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Kritima</h2>
+        <p class="title">Developer</p>
+        <p>Student ID: C0767722</p>
+        <p>kritima@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Philip</h2>
+        <p class="title">Developer</p>
+        <p>Student ID: C0767722</p>
+        <p>Philip@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

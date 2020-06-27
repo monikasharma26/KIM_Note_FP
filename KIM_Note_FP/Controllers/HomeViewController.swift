@@ -48,13 +48,13 @@ class HomeViewController: UIViewController {
          }
       
       @objc func contactbrowser() {
-    /*      let obj = self.storyboard?.instantiateViewController(withIdentifier: "AboutUsVC") as! AboutUsVC
-                        self.navigationController?.pushViewController(obj, animated: true)*/
+        let obj = self.storyboard?.instantiateViewController(withIdentifier: "AboutUsVC") as! AboutUsVC
+                        self.navigationController?.pushViewController(obj, animated: true)
          }
       
       @objc func aboutbrowser() {
-  /*     let obj = self.storyboard?.instantiateViewController(withIdentifier: "ContacttusVC") as! ContacttusVC
-         self.navigationController?.pushViewController(obj, animated: true)*/
+      let obj = self.storyboard?.instantiateViewController(withIdentifier: "ContacttusVC") as! ContacttusVC
+         self.navigationController?.pushViewController(obj, animated: true)
          }
 
       

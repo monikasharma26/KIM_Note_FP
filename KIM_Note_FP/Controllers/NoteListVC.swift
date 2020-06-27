@@ -120,4 +120,7 @@ class NoteListVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         self.refresh()
     }
     
+    @IBAction func backBtn(_ sender: Any) {
+               self.navigationController?.popViewController(animated: true)
+           }
 }
