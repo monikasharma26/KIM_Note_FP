@@ -259,6 +259,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JiC-Zv-eN7"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Oul-S5-XNM"/>
                     <connections>
                         <outlet property="descTxt" destination="XcM-ld-nKi" id="814-Cj-KTd"/>
                         <outlet property="dtLbl" destination="15h-qo-Wva" id="t6L-WL-Qax"/>
@@ -281,7 +282,7 @@
             <objects>
                 <viewController id="6Sm-Y9-SKe" customClass="RecordingVC" customModule="KIM_Note_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ql-00-hr0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6o-LR-l4p">
@@ -340,11 +341,12 @@
                                     <constraint firstAttribute="bottom" secondItem="wOj-q9-bCg" secondAttribute="bottom" id="qxe-Fi-Qq1"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Audio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuc-CJ-F0w">
-                                <rect key="frame" x="148" y="35" width="118" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Audio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuc-CJ-F0w">
+                                <rect key="frame" x="119" y="195" width="177" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.30196078431372547" green="0.67843137254901964" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="osq-wV-XCo" userLabel="BottomView">
@@ -442,7 +444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7Z-1F-xmd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2025" y="-44"/>
+            <point key="canvasLocation" x="1084" y="-33"/>
         </scene>
         <!--List Of Notes-->
         <scene sceneID="MUs-8G-A4N">
@@ -522,6 +524,7 @@
                                     <outlet property="dtlbl" destination="0Bj-bs-CCA" id="oEy-cZ-rrZ"/>
                                     <outlet property="mapView" destination="5LD-y9-Cwd" id="y7B-0x-tJL"/>
                                     <outlet property="titleLbl" destination="s42-ru-JTm" id="R7u-AL-r2n"/>
+                                    <segue destination="Zex-VP-r9w" kind="show" identifier="EditVc" id="IWh-qB-fh8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
